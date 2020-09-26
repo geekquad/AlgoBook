@@ -1,5 +1,7 @@
 <p align="center">
   <img width="460" height="400" src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/icon.png">
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)
 </p>
 A beginner friendly project to help you in various open source contributions. An attempt to bring all the algorithms together.
 
@@ -8,7 +10,7 @@ A beginner friendly project to help you in various open source contributions. An
 The goal of this project is to help the beginners with their contributions in Open Source and bring all the possible algorithms of Machine Learning and Python together. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
 <p> **For now, this repo is focused on the beginner frienldy contributions in Hacktoberfest 2020.** </p>
 
-## What is Open - Soruce?
+## What is Open - Soruce? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 Open-source software is a type of computer software in which source code is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. Open-source software may be developed in a collaborative public manner.
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
@@ -132,8 +134,7 @@ Our content is basically divided into 2 segments for now. Please create an issue
 
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/geekquad" width="100px;"><br><sub><b>Aditya Kumar Gupta</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=geekquad" title="Code">💻 🖋</a></td>
-    <td align="center"><a href="https://github.com/major-beast"><img alt="" src="https://avatars.githubusercontent.com/major-beast" width="100px;"><br><sub><b>Paurush Tiwari</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/geekquad" width="100px;"><br><sub><b>Aditya Kumar Gupta</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=geekquad" title="Code">💻 🖋</a></td></a></td>
   </tr>
 </tbody></table>
 
