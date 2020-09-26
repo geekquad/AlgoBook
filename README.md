@@ -39,9 +39,7 @@ To make your own local copy of the repository you would like to contribute to, l
 We’ll use the git clone command along with the URL that points to your fork of the repository.
 
 * Open the Command Prompt
-* Copy the url of the forked repository.
 * Type this command:
-
 
 ```
 git clone https://github.com/your_username/AlgoBook
@@ -111,13 +109,33 @@ You should navigate to your forked repository, and press the “New pull request
 
 GitHub will alert you that you are able to merge the two branches because there is no competing code. You should add in a **title**, a **comment**, and then press the **“Create pull request”** button.
 
+<hr> </hr>
 
+## Contents
+
+Our content is basically divided into 2 segments for now. Please create an issue if you wish to add code in a language that we don't currently have here. 
+
+* <a href="https://github.com/geekquad/AlgoBook/tree/master/python"> Python</a>
+* <a href="https://github.com/geekquad/AlgoBook/tree/master/ml"> ML</a>
  
+### Where to upload the files
 
+* Your files should be uploaded directly into the corresponding folder (For instance, if you wrote code for an Algorithm Implementation in Python, it goes inside the Python folder and same goes for the ML Algorithm)
+* Edit the corresponding README.md file to add the link to your code in the corresponding section (<a href="https://guides.github.com/features/mastering-markdown/">GitHub Markdown Guide</a>)
+* **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so.**
 
+<hr> </hr>
 
+### STAR :star2: this repository if you liked it :)
 
+#### Follow us too! :blush:
 
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/geekquad" width="100px;"><br><sub><b>Aditya Kumar Gupta</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=geekquad" title="Code">💻 🖋</a></td>
+    <td align="center"><a href="https://github.com/major-beast"><img alt="" src="https://avatars.githubusercontent.com/major-beast" width="100px;"><br><sub><b>Paurush Tiwari</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
+  </tr>
+</tbody></table>
 
 
 
