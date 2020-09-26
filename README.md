@@ -13,7 +13,7 @@ Open-source software is a type of computer software in which source code is rele
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
 
-## Hactoberfest2020
+## Hactoberfest2020 <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook">
 
 <img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/header.png">
 Hacktoberfest is a month-long celebration of open source software presented by Digital Ocean, Intel and DEV. Hacktoberfest is open to everyone in our global community!
