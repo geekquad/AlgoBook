@@ -3,15 +3,16 @@
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)
 </p>
-A beginner friendly project to help you in various open source contributions. An attempt to bring all the algorithms together.
+A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together.
 
 ## Overview
 
 The goal of this project is to help the beginners with their contributions in Open Source and bring all the possible algorithms of Machine Learning and Python together. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
-<p> **For now, this repo is focused on the beginner frienldy contributions in Hacktoberfest 2020.** </p>
+
+**<p> For now, this repo is focused on the beginner frienldy contributions in Hacktoberfest 2020.</p>**
 
 ## What is Open - Soruce? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-Open-source software is a type of computer software in which source code is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. Open-source software may be developed in a collaborative public manner.
+The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. When you contribute to something you already know and love, it can have so much more meaning, because you know how the tool is used and the good it does for you. Being part of an open source community opens you up to a broader range of people to interact with. 
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
 
@@ -20,7 +21,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 <img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/header.png">
 Hacktoberfest is a month-long celebration of open source software presented by Digital Ocean, Intel and DEV. Hacktoberfest is open to everyone in our global community!
 
-### Let's Get Started:
+## <u> Let's Get Started: </u>
 
 ### Step 1. Register to Hacktoberfest 2020
 ##### Link to register: https://hacktoberfest.digitalocean.com/
@@ -117,12 +118,11 @@ Our content is basically divided into 2 segments for now. Please create an issue
 ### Where to upload the files
 
 * Your files should be uploaded directly into the corresponding folder (For instance, if you wrote code for an Algorithm Implementation in Python, it goes inside the Python folder and same goes for the ML Algorithm)
-* Edit the corresponding README.md file to add the link to your code in the corresponding section (<a href="https://guides.github.com/features/mastering-markdown/">GitHub Markdown Guide</a>)
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so.**
 
 <hr> </hr>
 
-## STAR :star2: this repository if you liked it and had fun :)
+## Please STAR :star2: this repository if you liked it and had fun :)
 
 ### Follow us too! :blush:
 
