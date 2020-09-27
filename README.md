@@ -78,38 +78,32 @@ Once you have modified an existing file or added a new file to the project, you 
 
 You can type the command ```git add -A``` or alternatively ```git add -all``` for all new files to be staged.
 
+
 **With our file staged, we’ll want to record the changes that we made to the repository with the ```git commit``` command.**
 <p> The commit message is an important aspect of your code contribution; it helps the other contributors fully understand the change you have made, why you made it, and how significant it is.  </p>
  
  ```
  git commit -m "commit message"
  ```
- **Once you have saved and exited the commit message text file, you can verify what git will be committing with the following command:**
  
- ```
- git status
- ```
  
  At this point you can use the ```git push``` command to push the changes to the current branch of your forked repository:
  ```
  git push --set-upstream origin new-branch
  ```
  
- ### Step 6: Sync the Fork
-Once we have configured a remote that references the upstream and original repository on GitHub, we are ready to sync our fork of the repository to keep it up-to-date.
-
-To sync our fork, from the directory of our local repository in a terminal window, we’ll use the ```git fetch``` command to fetch the branches along with their respective commits from the upstream repository. Since we used the shortname “upstream” to refer to the upstream repository, we’ll pass that to the command:
-
-```
-git fetch upstream
-```
-
-### Step 7: Create Pull Request
+### Step 6: Create Pull Request
 At this point, you are ready to make a pull request to the original repository.
 
-You should navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page. 
+You should navigate to your **forked** repository, and press the “Compare & pull request” button on the page. 
+<img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/pr.JPG">
 
 GitHub will alert you that you are able to merge the two branches because there is no competing code. You should add in a **title**, a **comment**, and then press the **“Create pull request”** button.
+
+<img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/create%20pr.JPG">
+
+### Step 7: CONGRATULATIONS :boom: :clap: :relaxed:
+You have made it till the end. Kudos to you!!
 
 <hr> </hr>
 
@@ -128,31 +122,14 @@ Our content is basically divided into 2 segments for now. Please create an issue
 
 <hr> </hr>
 
-### STAR :star2: this repository if you liked it :)
+## STAR :star2: this repository if you liked it and had fun :)
 
-#### Follow us too! :blush:
+### Follow us too! :blush:
 
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/geekquad" width="100px;"><br><sub><b>Aditya Kumar Gupta</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=geekquad" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/geekquad"><img alt="" src="https://avatars.githubusercontent.com/geekquad" width="100px;"><br><sub><b>Aditya Kumar Gupta</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=geekquad" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/major-beast"><img alt="" src="https://avatars.githubusercontent.com/major-beast" width="100px;"><br><sub><b>Paurush Tiwari</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
   </tr>
 </tbody></table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
