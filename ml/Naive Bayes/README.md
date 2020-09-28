@@ -3,8 +3,19 @@
 **This markdown file is to give you a detailed and easy-to-understand explaination of WHAT the famous Naive Bayes algorithm is and WHY it is used widely in the field of machine learning.
 Read the file to the end for better understanding.**
 
-**Go through the Jupyter Notebook to learn how the algorithm is implemented and how it is used to solve machine learning problems.**
-
+**Go through the Jupyter Notebooks to learn how the algorithm is implemented and how it is used to solve machine learning problems.**
+  - Wine Quality Classification Notebook 
+    * For Beginners in ML.
+    * Use of basic functions.
+    * Easy to understand.
+    * Achieved 90.74% accuracy with Gaussian Naive Bayes.
+  - Women Clothing Sentiment Analysis Notebook
+    * Needs good ML understanding.
+    * NLP Techniques used for data pre-processing.
+    * Detailed Data Analysis and Feature Engineering.
+    * Data Visualization.
+    * Achieved 93 % accuracy with Multinomial Naive Bayes.
+    
 **For and doubts and queries, create an issue. :smile:**
 
 <img src="https://miro.medium.com/max/640/1*7lg_uLm8_1fYGjxPbTrQFQ.png">
@@ -62,14 +73,4 @@ Formula for Gaussain Naive Bayes.
 
 <hr> </hr>
 
-### Dataset Used: Wine Quality Dataset
-### Problem Type: Multi-Class Classification
-### Algorithm Used: Gaussian Naive Bayes
-### Evaluation of the Model:
-            precision    recall  f1-score   support
-      0       0.91      0.95      0.93        21
-      1       0.94      0.79      0.86        19
-      2       0.88      1.00      0.93        14
 
-    avg / total   0.91      0.91      0.91        54
-### Accuracy: 90.7 % 
