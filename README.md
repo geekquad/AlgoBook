@@ -11,7 +11,7 @@ The goal of this project is to help the beginners with their contributions in Op
 
 **<p> For now, this repo is focused on the beginner frienldy contributions in Hacktoberfest 2020.</p>**
 
-## What is Open - Soruce? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+## What is Open - Source? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. When you contribute to something you already know and love, it can have so much more meaning, because you know how the tool is used and the good it does for you. Being part of an open source community opens you up to a broader range of people to interact with. 
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
