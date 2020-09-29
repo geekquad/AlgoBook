@@ -1,9 +1,14 @@
 <p align="center">
   <img width="460" height="400" src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/icon.png">
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;
 </p>
-A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together.
+A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together. 
+
+
+**Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.**
+
+Join the community on <a href="https://join.slack.com/t/geekquad/shared_invite/zt-i117xz40-6eN05mvvci4eIdsrU1ehcA"> Slack. <a>
 
 ## Overview
 
@@ -122,6 +127,8 @@ Our content is basically divided into 2 segments for now. Please create an issue
 
 #### For any more issues and queries, please join our <a href="https://join.slack.com/t/geekquad/shared_invite/zt-i117xz40-6eN05mvvci4eIdsrU1ehcA"> Slack Channel. </a>
 Feel free to reach out to us. Rememeber, collaboration is the key to open-source. 
+
+#### Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.
 
 <hr> </hr>
 
