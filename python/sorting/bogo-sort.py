@@ -27,7 +27,13 @@ def shuffle(a):
         a[i], a[r] = a[r], a[i]
 
 # Driver code to test above
-a = [3, 2, 4, 1, 0, 5]
+a = []
+n = int(input("Enter no of elements:"))
+for i in range(0,n):
+    element = int(input())
+    a.append(element)
+
+    
 bogoSort(a)
 print("Sorted array :")
 for i in range(len(a)):
