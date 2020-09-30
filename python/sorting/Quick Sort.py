@@ -24,9 +24,11 @@ def quicksort(arr, low, high):
 
 
 
-arr = [10,2,4,7,56,12,18]
+arr = []
+print("Enter Elements:")
+arr = [int(num) for num in input().split()]
 n = len(arr)
 quicksort(arr,0, n-1)
-print("Sorted array: \n")
+print("Sorted array:")
 for i in range(n):
 	print(f"{arr[i]}", end = ' ')

@@ -31,12 +31,12 @@ def sort(arr, n):
 		heapify(arr, i , 0)
 
 
-
-
-a = [2,4,15,2,3,7,90]
+a = []
+print("Enter Elements:")
+a = [int(num) for num in input().split()]
 n = len(a)
 sort(a,n)
-print("Sorted Array: \n")
+print("Sorted Array:")
 for i in range(n):
 	print(f"{a[i]}", end = " ")
 

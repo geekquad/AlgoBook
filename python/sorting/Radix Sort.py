@@ -33,10 +33,10 @@ def radixsort(arr):
 		sort(arr, exp)
 		exp *= 10
 
-
-arr = [170, 45, 11, 815, 645, 24, 2, 70]
+arr = []
+print("Enter Elements:")
+arr = [int(num) for num in input().split()]
 n = len(arr)
 radixsort(arr)
-
 for i in range(n):
 	print(f"{arr[i]}", end = " ")
