@@ -63,6 +63,7 @@ It is important to branch the repository so that you are able to manage the work
 When creating a branch, it is very important that you create your new branch off of the master branch. 
 **To create a new branch, from your terminal window, follow:**
 
+
 ```
 git branch new-branch
 git checkout new-branch
