@@ -26,6 +26,7 @@ def mergesortAscen(arr): #Function to sort list in ascending order
             k+=1
         
     
+        #Adding the remaining elements
         while(i<len(first)):
                 arr[k] = first[i]
                 i+=1
