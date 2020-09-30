@@ -15,5 +15,6 @@ def insert(seq, k):  # insert seq[k] into sorted seq[0:k-1]
         (seq[pos], seq[pos-1]) = (seq[pos-1], seq[pos])
         pos -= 1
 
-arr = [1, 4, 2, 3, 0, 5]
+print("Enter list which you want to SORT: ")
+arr = list(map(int, input().split()))
 print(InsertionSort(arr))
