@@ -1,6 +1,4 @@
-# Following program is the python implementation of
 # Rabin Karp Algorithm given in CLRS book
-
 # d is the number of characters in the input alphabet
 d = 256
 
