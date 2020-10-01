@@ -31,7 +31,7 @@ def stoogesort(array, l, h):
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by comma:\n")
     unsorted = [int(x) for x in user_input.split(",")]
-    print(timSort(unsorted))
+    print(stoogesort(unsorted))
 
 
 
