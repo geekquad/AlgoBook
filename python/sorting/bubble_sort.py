@@ -7,7 +7,7 @@ def bubble_sort(array_of_numbers: []):
     n = len(array_of_numbers)
 
     for i in range(n - 1):  # outer loop
-        for j in range(1, n - i - 1):  # inner loop
+        for j in range( n - i - 1):  # inner loop
 
             # checking if the number is greater than the current arr[i] value
             if array_of_numbers[j] > array_of_numbers[j + 1]:
