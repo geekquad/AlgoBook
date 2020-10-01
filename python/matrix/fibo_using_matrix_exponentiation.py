@@ -5,6 +5,8 @@ basic concept
 |f(n)  |  =  |1 1|  *  |f(n-1)|
 |f(n-1)|  =  |1 0|  *  |f(n-2)|
 
+Which finally extends to,
+
 |f(n)  |  =  |1 1|^(n-1)  *  |f(1)|
 |f(n-1)|  =  |1 0|        *  |f(0)|
 
@@ -38,6 +40,6 @@ def fib(n):
       
     return F[0][0] 
   
-
-n = 7
-print(fib(n))
+if __name__ == '__main__':
+    n = int(input())
+    print(fib(n))
