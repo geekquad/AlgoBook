@@ -92,7 +92,7 @@ def __assert_sorted(collection):
 
 if __name__ == "__main__":
     user_input = input(
-        "Enter numbers ins sorted way, separated by coma:\n").strip()
+        "Enter numbers in sorted way, separated by coma:\n").strip()
     collection = [int(item) for item in user_input.split(",")]
 
     try:
