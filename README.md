@@ -61,7 +61,8 @@ git clone https://github.com/your_username/AlgoBook
 It is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
 
 When creating a branch, it is very important that you create your new branch off of the master branch. 
-**To create a new branch, from our terminal window, follow:**
+**To create a new branch, from your terminal window, follow:**
+
 
 ```
 git branch new-branch
