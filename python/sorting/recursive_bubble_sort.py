@@ -2,7 +2,8 @@
 	Recursive Bubble sort ''' 
 
 def bubble_sort(listt):
-	'''Function that takes a list and Bubble sorts it recusrively'''
+	'''Function that takes a list and performs
+	bubble sorts it recusrively'''
 
 	for i, num in enumerate(listt): 
 		try: 
