@@ -1,24 +1,28 @@
 # shell sort in python 
 # Shell Sort involves sorting elements which are away from ech other.
 
-def shellSort(input_list):
-    
-    gap = len(input_list) // 2
-    while gap > 0:
-
-        for i in range(gap, len(input_list)):
-            temp = input_list[i]
-            j = i
-
-            while j >= gap and input_list[j - gap] > temp:
-                input_list[j] = input_list[j - gap]
-                j = j-gap
-            input_list[j] = temp
-
-
-        gap = gap//2
-
-list = [19,2,31,45,30,11,121,27]
-
-shellSort(list)
-print(list)
+def gaps(size):
+    length = size.bit_length()
+    for k in range(length - 1, 0, -1):
+        yield 2**k - 1
+ 
+ 
+def shell_sort(alist):
+    def insertion_sort_with_gap(gap):
+        for i in range(gap, len(alist)):
+            temp = alist[i]
+            j = i - gap
+            while (j >= 0 and temp < alist[j]):
+                alist[j + gap] = alist[j]
+                j = j - gap
+            alist[j + gap] = temp
+ 
+    for g in gaps(len(alist)):
+        insertion_sort_with_gap(g)
+ 
+ 
+alist = input('Enter the list of numbers: ').split()
+alist = [int(x) for x in alist]
+shell_sort(alist)
+print('Sorted list: ', end='')
+print(alist)
