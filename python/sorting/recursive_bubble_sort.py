@@ -3,7 +3,7 @@
 
 def bubble_sort(listt):
 	'''Function that takes a list and performs
-	bubble sorts it recusrively'''
+	bubble sort recusrively'''
 
 	for i, num in enumerate(listt): 
 		try: 
