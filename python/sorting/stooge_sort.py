@@ -27,14 +27,12 @@ def stoogesort(array, l, h):
         stoogesort(array, l, (h-t))
 
 
-# checking
-array = [2, 4, 5, 3, 1]
-n = len(arr)
+# user_input
+if __name__ == "__main__":
+    user_input = input("Enter numbers separated by comma:\n")
+    unsorted = [int(x) for x in user_input.split(",")]
+    print(timSort(unsorted))
 
-stoogesort(array, 0, n-1)
-
-for i in range(0, n):
-    print(array[i], end = ' ')
 
 
 #hi this is done by srishti
