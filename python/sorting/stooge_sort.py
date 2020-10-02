@@ -14,7 +14,6 @@ def stoogesort(array, l, h):
     # the array
     if h-l + 1 > 2:
         t = (int)((h-l + 1)/3)
-
         # Recursively sort first 2 / 3 elements
         stoogesort(array, l, (h-t))
 
