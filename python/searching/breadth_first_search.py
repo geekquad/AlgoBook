@@ -15,7 +15,7 @@ graph = {
 visited = [] # List to keep track of visited nodes.
 queue = []     #Initialize a queue
 
-def bfs(visited, graph, node):
+def breadth_first_search(visited, graph, node):
   visited.append(node)
   queue.append(node)
 
@@ -29,4 +29,4 @@ def bfs(visited, graph, node):
         queue.append(neighbour)
 
 # Driver Code
-bfs(visited, graph, 'A')  #starting search form 'A'
+breadth_first_search(visited, graph, 'A')  #starting search form 'A'
