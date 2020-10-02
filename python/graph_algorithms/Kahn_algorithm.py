@@ -37,13 +37,15 @@ class Graph:
         # One by one dequeue vertices from queue and enqueue
         # adjacents if indegree of adjacent becomes 0
         while queue:
-
+            # Extract front of queue and add it to topological order
             u = queue.pop(0)
             top_order.append(u)
-
+            
+            # Decrease in-degree of all neighbouring nodes of dequeued node u 
             for i in self.graph[u]:
                 in_degree[i] -= 1
-
+                
+                # If in-degree becomes zero, add it to queue
                 if in_degree[i] == 0:
                     queue.append(i)
 
