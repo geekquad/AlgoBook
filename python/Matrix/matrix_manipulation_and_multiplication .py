@@ -10,12 +10,14 @@ b = [
     [9, -3, 8]
 ]
 
+
 def display(matrix: [[], [], []]):
-    
+
     for i in range(len(matrix)):
         for j in range(len(matrix[0])):
             print(matrix[i][j], end="\t")
         print()
+
 
 def multiply_matrix(a, b):
 
@@ -28,24 +30,24 @@ def multiply_matrix(a, b):
         for j in range(3):
             for k in range(3):
                 c[i][j] = c[i][j] + a[i][k] * b[k][j]
-    
+
     return c
 
 
 def remove_row(matrix: [[], [], []]):
 
-    return(matrix[0:len(matrix)-1])
+    return(matrix[0:len(matrix) - 1])
 
 
 def remove_col(matrix: [[], [], []]):
 
     for i in range(len(matrix)):
-        matrix[i] = matrix[i][0:len(matrix)-1]
+        matrix[i] = matrix[i][0:len(matrix) - 1]
 
     return matrix
 
+
 if __name__ == "__main__":
-    option = 'y'
 
     print("press 1 for Multiplication ")
     print("press 2 to Remove a column")
@@ -72,4 +74,3 @@ if __name__ == "__main__":
         display(a)
         print("After Removing Last Row")
         print(display(remove_row(a)))
-
