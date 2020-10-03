@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "subhash1612",
+      "name": "Subhash Raja",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/58407744?v=4",
+      "profile": "https://github.com/subhash1612",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "AlgoBook",
+  "projectOwner": "geekquad",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
