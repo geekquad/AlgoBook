@@ -1,8 +1,4 @@
-python 3.5
-
-numpy 1.15.4
-pandas 1.0.1
-
-sklearn 0.21.3
-
-graphviz 0.14.1
+numpy==1.15.4
+pandas==1.0.1
+sklearn==0.21.3
+graphviz==0.14.1
