@@ -1,4 +1,7 @@
 # Python implementation Randomized Pivot QuickSort using Lomuto's partition Scheme.
+# Contributed by @ddhira123
+# References: GeeksforGeeks
+
 import random
  
 '''
