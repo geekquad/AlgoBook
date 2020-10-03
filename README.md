@@ -158,7 +158,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/subhash1612"><img src="https://avatars2.githubusercontent.com/u/58407744?v=4" width="100px;" alt=""/><br /><sub><b>Subhash Raja</b></sub></a><br /><a href="https://github.com/geekquad/AlgoBook/commits?author=subhash1612" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/bryonye"><img src="https://avatars3.githubusercontent.com/u/56762567?v=4" width="100px;" alt=""/><br /><sub><b>bryonye</b></sub></a><br /><a href="#design-bryonye" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/bryonye"><img src="https://avatars3.githubusercontent.com/u/56762567?v=4" width="100px;" alt=""/><br /><sub><b>bryonye</b></sub></a><br /><a href="#design-bryonye" title="Design">🎨</a> <a href="https://github.com/geekquad/AlgoBook/commits?author=bryonye" title="Code">💻</a></td>
   </tr>
 </table>
 
