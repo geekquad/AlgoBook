@@ -9,7 +9,6 @@ class Node:
 # Inorder tree traversal 
 def printInorder(root): 
 	if root: 
-
 		# recur on left child 
 		printInorder(root.left) 
 
@@ -22,9 +21,7 @@ def printInorder(root):
 
 # Postorder tree traversal 
 def printPostorder(root): 
-
 	if root: 
-
 		# recur on left child 
 		printPostorder(root.left) 
 
@@ -37,9 +34,7 @@ def printPostorder(root):
 
 # Preorder tree traversal 
 def printPreorder(root): 
-
 	if root: 
-
 		# data of the node 
 		print(root.val), 
 
