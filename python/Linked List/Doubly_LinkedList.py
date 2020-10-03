@@ -12,7 +12,6 @@ class DoublyLinkedList:
         self.length = 0
 
     def isEmpty(self):
-        # return True if self.head is None else False
         if self.head is None:
             return True
         else:
