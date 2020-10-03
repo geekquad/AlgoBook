@@ -7,6 +7,7 @@ It is the most common. Each node has data and a pointer to the next node.
 
 # Doubly Linked List :-
 We add a pointer to the previous node in a doubly-linked list. Thus, we can go in either direction: forward or backward.
+We can also reverse the doubly linked list
 
 # Circular Linked List :-
 A circular linked list is a variation of a linked list in which the last element is linked to the first element. This forms a circular loop.
