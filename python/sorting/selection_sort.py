@@ -13,3 +13,9 @@ def selection_sort(array):
         minimum_index = minimum(array, i)
         if array[i] > array[minimum_index]:
             array[i], array[minimum_index] = array[minimum_index], array[i]
+
+if __name__ == "__main__":
+    entry = input("Enter numbers separated by space: => ")
+    array = [int(x) for x in entry.split()]
+    selection_sort(array)
+    print(array)
