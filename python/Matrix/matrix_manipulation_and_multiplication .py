@@ -12,8 +12,8 @@ b = [
 
 def display(matrix: [[], [], []]):
     
-    for i in range(3):
-        for j in range(3):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
             print(matrix[i][j], end="\t")
         print()
 
@@ -37,6 +37,13 @@ def remove_row(matrix: [[], [], []]):
     return(matrix[0:len(matrix)-1])
 
 
+def remove_col(matrix: [[], [], []]):
+
+    for i in range(len(matrix)):
+        matrix[i] = matrix[i][0:len(matrix)-1]
+
+    return matrix
+
 if __name__ == "__main__":
     option = 'y'
 
@@ -53,6 +60,12 @@ if __name__ == "__main__":
         display(b)
         print("Matrix C = A * B")
         display(multiply_matrix(a, b))
+
+    if x == 2:
+        print("Matrix B")
+        display(b)
+        print("After removing Last Column")
+        print(display(remove_col(b)))
 
     if x == 3:
         print("Matrix A")
