@@ -30,10 +30,7 @@ def inorder(root):
     if root is not None: 
         inorder(root.left) 
         print (root.key) 
-        inorder(root.right) 
-    else:
-        print('Value not availabe')
-  
+        inorder(root.right)  
   
   
 # A function to insert a new node with given key in BST 
