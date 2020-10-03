@@ -1,7 +1,10 @@
-<p align="center">
-  <img width="460" height="400" src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/icon.png">
+# ![Algo-Book-poster.png](https://i.postimg.cc/xTqx9Dsp/Algo-Book-poster.png)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+ 
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;
 </p>
 A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together. 
 
@@ -14,14 +17,14 @@ Join the community on <a href="https://join.slack.com/t/geekquad/shared_invite/z
 
 The goal of this project is to help the beginners with their contributions in Open Source and bring all the possible algorithms of Machine Learning and Python together. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
 
-**<p> For now, this repo is focused on the beginner frienldy contributions in Hacktoberfest 2020.</p>**
+**<p> For now, this repo is focused on the beginner friendly contributions in Hacktoberfest 2020.</p>**
 
-## What is Open - Soruce? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+## What is Open - Source? [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. When you contribute to something you already know and love, it can have so much more meaning, because you know how the tool is used and the good it does for you. Being part of an open source community opens you up to a broader range of people to interact with. 
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
 
-## Hactoberfest2020 <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook">
+## Hacktoberfest2020 <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook">
 
 <img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/header.png">
 Hacktoberfest is a month-long celebration of open source software presented by Digital Ocean, Intel and DEV. Hacktoberfest is open to everyone in our global community!
@@ -58,10 +61,11 @@ git clone https://github.com/your_username/AlgoBook
 
 
 ### Step 3: Creating a New Branch
-it is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
+It is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
 
 When creating a branch, it is very important that you create your new branch off of the master branch. 
-**To create our branch, from our terminal window, follow:**
+**To create a new branch, from your terminal window, follow:**
+
 
 ```
 git branch new-branch
@@ -143,3 +147,23 @@ Feel free to reach out to us. Rememeber, collaboration is the key to open-source
   </tr>
 </tbody></table>
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/subhash1612"><img src="https://avatars2.githubusercontent.com/u/58407744?v=4" width="100px;" alt=""/><br /><sub><b>Subhash Raja</b></sub></a><br /><a href="https://github.com/geekquad/AlgoBook/commits?author=subhash1612" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vardhanaleti"><img src="https://avatars1.githubusercontent.com/u/55653629?v=4" width="100px;" alt=""/><br /><sub><b>vardhanaleti</b></sub></a><br /><a href="https://github.com/geekquad/AlgoBook/commits?author=vardhanaleti" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
