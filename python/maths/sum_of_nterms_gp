@@ -1,0 +1,23 @@
+
+# Function to calculate sum of n terms in geometric series
+
+def sum_gp(a,r,n):
+    
+    sum = 0
+    i = 0
+    while(i< n):
+        sum = sum + a
+        a = a * r # a is the first term and r is the common ratio.
+        i = i + 1 # This is like a + ar + ar^2...ar^n.
+        
+    return sum
+
+#driver function
+    
+#Input valus for a,r,n are received from user.
+a = input("Enter the first value of the geomtric series :")
+r = input("Enter the common ratio of the series :" )
+n = input("Enter the number of terms of the series :")
+
+
+print("%.5f" %sum_gp(int(a),float(r),int(n))) #prints the sum as output using the sum_gp function
