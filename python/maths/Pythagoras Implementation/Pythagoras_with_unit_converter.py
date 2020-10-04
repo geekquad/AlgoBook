@@ -53,7 +53,7 @@ def converter(num,unit):
 
 
 while 1:
-    side = input('Which side(h,p,b) do you want to calculate : ')
+    side = input('Which side(h,p,b) do you want to calculate or enter exit :')
 
     
     
