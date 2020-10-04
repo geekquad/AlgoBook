@@ -23,7 +23,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
 - If you need a third party module that is not in the file __requirements.txt__, please add it to that file as part of your submission.
 
 #### Other points to remember while submitting your work:
-
+- **We won't be accepting just the dataset in the form of PRs**, if you are using any if the dataset in of the implementation then we'll accept it.
 - File extension for code should be `.py`. 
 - Jupyter notebook files are acceptable in machine learning algorithms.
 - Strictly use snake_case (underscore_separated) in your file_name, as it will be easy to parse in future using scripts.
