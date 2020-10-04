@@ -81,8 +81,6 @@ while 1:
         break
 
     elif side == 'b':
-        side_h = float(input('Enter the lenght of Hypotenuse : '))
-        side_p = float(input('Enter the lenght of Perpendicular : '))
         
         side_h_unit = input('Enter the lenght of Hypotenuse(eg: x cm or x) : ')
         side_p_unit = input('Enter the lenght of Perpendicular(eg: y cm or y) : ')
@@ -92,7 +90,7 @@ while 1:
     
         side_b = sqrt((side_h*side_h) - (side_p*side_p))
     
-        print("The lenght of Perpendicular is : {}".format(round(side_p,2)), unit)
+        print("The lenght of Perpendicular is : {}".format(round(side_b,2)), unit)
         break
     
     elif side =='exit':
