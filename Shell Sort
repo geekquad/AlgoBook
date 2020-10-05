@@ -28,13 +28,12 @@ def shellSort(arr):
         gap //= 2
   
   
-# Driver code to test above 
-arr = [ 12, 34, 54, 2, 3] 
-  
+# Taking input from the user in an array arr
+arr = list(map(int,input().split()))  
 n = len(arr) 
 print ("Array before sorting:") 
 for i in range(n): 
-    print(arr[i]), 
+    print(arr[i]) 
   
 shellSort(arr) 
   
