@@ -1,4 +1,9 @@
-from queue import QueueUnderflowError, QueueOverflowError
+class QueueOverflowError(BaseException):
+    pass
+
+
+class QueueUnderflowError(BaseException):
+    pass
 
 
 class PriorityQueue:
