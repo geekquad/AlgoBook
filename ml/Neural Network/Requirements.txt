@@ -1,9 +1,5 @@
-NOTE : I am not sure about lower version but i have this version in my pc 
-
-1 Keras - 2.3.1
-2 Scikit Learn - 0.22.1
-3 matplotlib - 3.1.3
-4 numpy - 1.18.1
-5 pandas - 1.0.3
-
-If you have exaclty this version then this programme will run excellent.
+1 keras == 2.3.1
+2 scikit-learn == 0.22.1
+3 matplotlib == 3.1.3
+4 numpy == 1.18.1
+5 pandas == 1.0.3
