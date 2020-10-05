@@ -1,3 +1,12 @@
+# PROBLEM STATEMENT : 
+# Given two words str1 and str2, find the minimum number of operations required to convert str11 to str22.
+# You have the following 3 operations permitted on a word:
+# 1.Insert a character
+# 2.Delete a character
+# 3.Replace a character
+
+# This is very Famous Dynamic Programming Problem called is Edit distance or Levenshtein algorithm
+
 def editdistance(str1 , str2):
     m = len(str1)
     n = len(str2)
