@@ -15,4 +15,4 @@ def lowest_common_multiple(list1):
 # accepting two numbers from user in a list
 list1 = list(map(int, input().split()))
 # printing the lowest common multiple
-print(f"Lowest Common Multiple : {lowest_common_multiple(list1)}")
+print(f"Lowest Common Multiple is : {lowest_common_multiple(list1)}")
