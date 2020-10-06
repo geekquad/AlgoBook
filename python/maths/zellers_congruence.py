@@ -13,16 +13,11 @@ def day_of_date(d) :
     return day_dict[d]
 
 def month_shift(month, year):
-    if month == 1:
+    if month == 1 or month == 2:
         month += 10
         year -= 1
-        return month , year
-        
-    elif month == 2:
-        month += 10
-        year -= 1
-        return month , year
-        
+        return month , year  
+    
     else:
         month -= 2
         return month ,year
