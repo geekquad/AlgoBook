@@ -1,4 +1,4 @@
-# AO star by Priyanka 
+# AO star by Priyanka Gupta
 #input should be given such that, nodes having "*and* should be together
 
 import sys
