@@ -31,4 +31,5 @@ int main(){
     }
     
     Depth_First_Search(Graph,5,4,visited);
+    return 0;
 }
