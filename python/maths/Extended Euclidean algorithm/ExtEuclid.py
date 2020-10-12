@@ -13,4 +13,8 @@ def ext_euclid(a, b):
         print(x,y,u,v)
 
     gcd = b
-    return gcd,x,y
+    return gcd, x,y
+
+a, b = 30, 20
+gcd, x, y = ext_euclid(a, b)
+print("gcd(",a,",",b,") = ",gcd)
