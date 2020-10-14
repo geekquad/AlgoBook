@@ -19,16 +19,15 @@ def reduced_direction(givenDirections):
 			
 	return finalDirections 
 
-
-# creating an empty list 
+# creating an empty list for storing directions
 directions = [] 
   
-# number of elemetns as input 
+# number of directions as an input 
 n = int(input("Enter number of directions : ")) 
   
-# iterating till the range 
+# taking directions as input 
 for i in range(0, n): 
     dir = input() 
-    directions.append(dir) # adding the element 
+    directions.append(dir) # adding the directions 
       
 print(reduced_direction(directions)) 
