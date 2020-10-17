@@ -3,6 +3,7 @@
 using namespace std;
 
 int interpolationSearch(int arr[], int n, int x) {
+
   int low = 0, hi = (n - 1);
   while (low <= hi && x >= arr[low] && x <= arr[hi]) {
     if (low == hi) {
@@ -14,6 +15,18 @@ int interpolationSearch(int arr[], int n, int x) {
       return pos;
     if (arr[pos] < x)
       low = pos + 1;
+
+  int lo = 0, hi = (n - 1);
+  while (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
+    if (lo == hi) {
+      if (arr[lo] == x) return lo;
+      return -1;
+    }
+    int pos = lo + (((double)(hi - lo) / (arr[hi] - arr[lo])) * (x - arr[lo]));
+    if (arr[pos] == x)
+      return pos;
+    if (arr[pos] < x)
+      lo = pos + 1;
     else
       hi = pos - 1;
   }
