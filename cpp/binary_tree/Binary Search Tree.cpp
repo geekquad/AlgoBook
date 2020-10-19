@@ -1,147 +1,147 @@
 #include<iostream>
 using namespace std;
-template<typename T> 
-class BinarySearchTree
-{
-private:
-	struct tree_node
-	{
-		tree_node* left;
-		tree_node* right;
-		T data;
-	};
-	tree_node* root;
+
+class BST {
+    
+    struct node {
+        int data;
+        node* left;
+        node* right;
+    };
+
+    node* root;
+
+    node* makeEmpty(node* t) {
+        if(t == NULL)
+            return NULL;
+        {
+            makeEmpty(t->left);
+            makeEmpty(t->right);
+            delete t;
+        }
+        return NULL;
+    }
+
+    node* insert(int x, node* t)
+    {
+        if(t == NULL)
+        {
+            t = new node;
+            t->data = x;
+            t->left = t->right = NULL;
+        }
+        else if(x < t->data)
+            t->left = insert(x, t->left);
+        else if(x > t->data)
+            t->right = insert(x, t->right);
+        return t;
+    }
+
+    node* findMin(node* t)
+    {
+        if(t == NULL)
+            return NULL;
+        else if(t->left == NULL)
+            return t;
+        else
+            return findMin(t->left);
+    }
+
+    node* findMax(node* t) {
+        if(t == NULL)
+            return NULL;
+        else if(t->right == NULL)
+            return t;
+        else
+            return findMax(t->right);
+    }
+
+    node* remove(int x, node* t) {
+        node* temp;
+        if(t == NULL)
+            return NULL;
+        else if(x < t->data)
+            t->left = remove(x, t->left);
+        else if(x > t->data)
+            t->right = remove(x, t->right);
+        else if(t->left && t->right)
+        {
+            temp = findMin(t->right);
+            t->data = temp->data;
+            t->right = remove(t->data, t->right);
+        }
+        else
+        {
+            temp = t;
+            if(t->left == NULL)
+                t = t->right;
+            else if(t->right == NULL)
+                t = t->left;
+            delete temp;
+        }
+
+        return t;
+    }
+
+    void inorder(node* t) {
+        if(t == NULL)
+            return;
+        inorder(t->left);
+        cout << t->data << " ";
+        inorder(t->right);
+    }
+
+    node* find(node* t, int x) {
+        if(t == NULL)
+            return NULL;
+        else if(x < t->data)
+            return find(t->left, x);
+        else if(x > t->data)
+            return find(t->right, x);
+        else
+            return t;
+    }
+
 public:
-	BinarySearchTree()
-	{
-		root = NULL;
-	}
-	bool isEmpty() const { return root==NULL; }
-	void insert(T);
-	void print_inorder();
-	void inorder(tree_node*);
-	void print_preorder();
-	void preorder(tree_node*);
-	void print_postorder();
-	void postorder(tree_node*);
+    BST() {
+        root = NULL;
+    }
+
+    ~BST() {
+        root = makeEmpty(root);
+    }
+
+    void insert(int x) {
+        root = insert(x, root);
+    }
+
+    void remove(int x) {
+        root = remove(x, root);
+    }
+
+    void display() {
+        inorder(root);
+        cout << endl;
+    }
+
+    void search(int x) {
+        root = find(root, x);
+    }
 };
 
-template <typename T>
-void BinarySearchTree<T>::insert(T d)
-{
-	tree_node* t = new tree_node;
-	tree_node* parent;
-	t->data = d;
-	t->left = NULL;
-	t->right = NULL;
-	parent = NULL;
-	if(isEmpty()) root = t;
-	else
-	{
-		tree_node* curr;
-		curr = root;
-		while(curr)
-		{
-			parent = curr;
-			if(t->data > curr->data) curr = curr->right;
-			else curr = curr->left;
-		}
-
-		if(t->data < parent->data)
-			parent->left = t;
-		else
-			parent->right = t;
-	}
-}
-template<typename T>
-void BinarySearchTree<T>::print_inorder()
-{
-	inorder(root);
-}
-template<typename T>
-void BinarySearchTree<T>::inorder(tree_node* p)
-{
-	if(p != NULL)
-	{
-		if(p->left) inorder(p->left);
-		cout<<" "<<p->data<<" ";
-		if(p->right) inorder(p->right);
-	}
-	else return;
-}
-template<typename T>
-void BinarySearchTree<T>::print_preorder()
-{
-	preorder(root);
-}
-template<typename T>
-void BinarySearchTree<T>::preorder(tree_node* p)
-{
-	if(p != NULL)
-	{
-		cout<<" "<<p->data<<" ";
-		if(p->left) preorder(p->left);
-		if(p->right) preorder(p->right);
-	}
-	else return;
-}
-template<typename T>
-void BinarySearchTree<T>::print_postorder()
-{
-	postorder(root);
-}
-
-template<typename T>
-void BinarySearchTree<T>::postorder(tree_node* p)
-{
-	if(p != NULL)
-	{
-		if(p->left) postorder(p->left);
-		if(p->right) postorder(p->right);
-		cout<<" "<<p->data<<" ";
-	}
-	else return;
-}
-
-int main()
-{
-	BinarySearchTree<int> b;
-	int ch;
-	int tmp,tmp1;
-	while(1)
-	{
-		cout<<endl<<endl;
-		cout<<" Binary Search Tree Operations "<<endl;
-		cout<<" ----------------------------- "<<endl;
-		cout<<" 1. Insertion/Creation "<<endl;
-		cout<<" 2. In-Order Traversal "<<endl;
-		cout<<" 3. Pre-Order Traversal "<<endl;
-		cout<<" 4. Post-Order Traversal "<<endl;
-		cout<<" 5. Exit "<<endl;
-		cout<<" Enter your choice : ";
-		cin>>ch;
-		switch(ch)
-		{
-		case 1 : cout<<" Enter data to be inserted : ";
-			cin>>tmp;
-			b.insert(tmp);
-			break;
-		case 2 : cout<<endl;
-			cout<<" In-Order Traversal "<<endl;
-			cout<<" -------------------"<<endl;
-			b.print_inorder();
-			break;
-		case 3 : cout<<endl;
-			cout<<" Pre-Order Traversal "<<endl;
-			cout<<" -------------------"<<endl;
-			b.print_preorder();
-			break;
-		case 4 : cout<<endl;
-			cout<<" Post-Order Traversal "<<endl;
-			cout<<" --------------------"<<endl;
-			b.print_postorder();
-			break;
-		case 5 :return 0;
-		}
-	}
+int main() {
+    BST t;
+    t.insert(20);
+    t.insert(25);
+    t.insert(15);
+    t.insert(10);
+    t.insert(30);
+    t.display();
+    t.remove(20);
+    t.display();
+    t.remove(25);
+    t.display();
+    t.remove(30);
+    t.display();
+    return 0; 
 }
