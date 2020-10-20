@@ -11,6 +11,7 @@ def bailey_borwein_plouffe(digit_position: int, precision: int = 1000) -> str:
     A higher number reduces the chance of an error but increases the runtime.
     @return: a hexadecimal digit representing the digit at the nth position
     in pi's decimal expansion.
+
     >>> "".join(bailey_borwein_plouffe(i) for i in range(1, 11))
     '243f6a8885'
     >>> bailey_borwein_plouffe(5, 10000)
