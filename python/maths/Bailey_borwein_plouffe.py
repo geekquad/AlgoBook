@@ -18,19 +18,13 @@ def bailey_borwein_plouffe(digit_position: int, precision: int = 1000) -> str:
 def _subsum(
     digit_pos_to_extract: int, denominator_addend: int, precision: int
 ) -> float:
-    Private helper function to implement the summation
-    functionality.
-    @param digit_pos_to_extract: digit position to extract
-    @param denominator_addend: added to denominator of fractions in the formula
-    @param precision: same as precision in main function
-    @return: floating-point number whose integer part is not important
-    """
+    
     sum = 0.0
     for sum_index in range(digit_pos_to_extract + precision):
         denominator = 8 * sum_index + denominator_addend
         exponential_term = 0.0
         if sum_index < digit_pos_to_extract:
-           
+
             exponential_term = pow(
                 16, digit_pos_to_extract - 1 - sum_index, denominator
             )
