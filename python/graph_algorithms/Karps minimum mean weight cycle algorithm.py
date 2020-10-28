@@ -40,10 +40,10 @@ vg values
 
 	return result 
 
-# Driver Code 
+#  Driver Code 
 V = 4
 
-# vector to store edges 
+#  vector to store edges 
 edges = [[] for i in range(V)] 
 
 addedge(0, 1, 1) 
