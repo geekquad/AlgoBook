@@ -1,0 +1,100 @@
+body{
+    background:url(back.jfif) center no-repeat;
+    background-size:100%;
+    color: #fff;
+}
+h1 {
+margin-left: 70px;
+}
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-size:18px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}
+body {
+  background: url(417109.jpg) no-repeat center center fixed;
+  background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+}
+
+.blur {
+  background: url(417109.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(13px);
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+}
+
+.widget {
+  border-top: 2px solid rgba(255, 255, 255, .5);
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  height: 92%;
+  width: 55%;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.text {
+  height: 800px;
+  width: 600px;
+}
+
+.text h1 {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, .1);
+  color: #ffffff;
+  margin-top: 57px;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.text p {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, .1);
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 22px;
+}
