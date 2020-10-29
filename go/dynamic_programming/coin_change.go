@@ -4,6 +4,7 @@
 
 	Given a value M, if we want to make change for M cents, and we have infinite supply of each of S = { S1, S2, .. , Sn} valued coins,
 	how many ways can we make the change? The order of coins doesn’t matter.
+	Example : For M = 10 and S = {2, 5, 3, 6}, there are five solutions: {2,2,2,2,2}, {2,2,3,3}, {2,2,6}, {2,3,5} and {5,5}. So the number of ways is 5.
 
 */
 
