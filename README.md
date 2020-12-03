@@ -9,7 +9,6 @@ A beginner friendly project to help you in open source contributions. An attempt
 
 **Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.**
 
-Join the community on <a href="https://join.slack.com/t/geekquad/shared_invite/zt-i117xz40-6eN05mvvci4eIdsrU1ehcA"> Slack. <a>
 
 ## Overview
 
