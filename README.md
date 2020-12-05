@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
  
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;![GitHub contributors](https://img.shields.io/github/contributors-anon/geekquad/AlgoBook) ![Maintenance](https://img.shields.io/maintenance/yes/2020)![GitHub forks](https://img.shields.io/github/forks/geekquad/AlgoBook?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/geekquad/AlgoBook?style=social) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;![GitHub contributors](https://img.shields.io/github/contributors-anon/geekquad/AlgoBook) ![Maintenance](https://img.shields.io/maintenance/yes/2020)![GitHub forks](https://img.shields.io/github/forks/geekquad/AlgoBook?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/geekquad/AlgoBook?style=social) 
 </p>
 A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together. 
 
@@ -21,19 +21,10 @@ The open source community provides a great opportunity for aspiring programmers 
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
 
-## Hacktoberfest2020 <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/geekquad/AlgoBook">
-
-<img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/header.png">
-Hacktoberfest is a month-long celebration of open source software presented by Digital Ocean, Intel and DEV. Hacktoberfest is open to everyone in our global community!
 
 ## <u> Let's Get Started: </u>
 
-### Step 1. Register to Hacktoberfest 2020
-##### Link to register: https://hacktoberfest.digitalocean.com/
-
-<img src="https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/start.JPG">
-
-### Step 2. Create a Copy of this Repository
+### Step 1. Create a Copy of this Repository
 In order to work on an open-source project, you will first need to make your own copy of the repository. To do this, you should fork the repository and then clone it so that you have a local working copy.
 
 > **Fork :fork_and_knife: this repo. Click on the Fork button at the top right corner.**
@@ -57,7 +48,7 @@ git clone https://github.com/your_username/AlgoBook
 
 
 
-### Step 3: Creating a New Branch
+### Step 2: Creating a New Branch
 It is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
 
 When creating a branch, it is very important that you create your new branch off of the master branch. 
@@ -75,10 +66,10 @@ Switched to branch 'new-branch'
 ```
 
 
-### Step 4: Contribute
+### Step 3: Contribute
 Make relevant changes. Add new algorithms. Add Readme files. Contribute in any way you feel like :)
 
-### Step 5: Commiting and Pushing:
+### Step 4: Commiting and Pushing:
 Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which we can do with the git add command.
 
 ``` git add filename``` or ``` git add .``` 
@@ -116,7 +107,7 @@ You have made it till the end. Kudos to you!!
 
 ## Contents
 
-Our content is basically divided into 2 segments for now. Please create an issue if you wish to add code in a language that we don't currently have here. 
+Our content is basically divided into 4 segments for now. Please create an issue if you wish to add code in a language that we don't currently have here. 
 
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/python"> Python</a>
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/ml"> ML</a>
