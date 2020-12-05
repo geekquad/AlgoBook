@@ -1,4 +1,4 @@
-# ![Algo-Book-poster.png](https://i.postimg.cc/xTqx9Dsp/Algo-Book-poster.png)
+# ![Algo-Book-poster.png](https://github.com/geekquad/AlgoBook/blob/master/project/Readme_Images/icon2.PNG)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
  
   
