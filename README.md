@@ -110,6 +110,7 @@ Our content is basically divided into 4 segments for now. Please create an issue
 
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/python"> Python</a>
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/ml"> ML</a>
+* <a href="https://github.com/geekquad/AlgoBook/tree/master/dl"> DL</a>
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/cpp"> cpp </a>
 * [go](https://github.com/geekquad/AlgoBook/tree/master/go)
  
