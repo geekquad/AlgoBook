@@ -4,14 +4,15 @@ using namespace std;
 
 int main()
 {
-    long long n,r,a;
+    long long n;
+    long double r,a;
     cout<<"Enter no. of terms: ";
     cin>>n;
-    cout<<endl<<"Enter first term: ";
+    cout<<"Enter first term: ";
     cin>>a;
-    cout<<endl<<"Enter common ratio: ";
+    cout<<"Enter common ratio: ";
     cin>>r;
-    cout<<endl<<"Sum of n terms in a Geometric Progression: ";
+    cout<<"Sum of n terms in a Geometric Progression: ";
     if(r!=1)
         cout<<a*(1-pow(r,n))/(1-r)<<endl;
     else
