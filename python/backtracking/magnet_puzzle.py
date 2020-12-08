@@ -148,3 +148,14 @@ if __name__ == '__main__':
     ]
 
     (M, N) = (5, 6)
+    # to store result initialize all cells by 'X'
+    board = [['X' for x in range(N)] for y in range(M)]
+
+    # start from (0, 0) cell
+    if solve(board, 0, 0, top, left, bottom, right, rules):
+        for i in range(M):
+            for j in range(N):
+                print(board[i][j], end=' ')
+            print()
+    else:
+        print("Solution does not exist")
