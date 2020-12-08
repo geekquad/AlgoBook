@@ -63,6 +63,73 @@ def validate(board, top, left, bottom, right):
     return True
 
 
+def solve(board, row, col, top, left, bottom, right, rules):
+    # if we have reached last cell
+    if row >= M - 1 and col >= N - 1:
+        return validate(board, top, left, bottom, right)
+
+    # if last column of current row is already processed, go to next row, first column
+    if col >= N:
+        col = 0
+        row = row + 1
+
+    # if current cell contains R (end of horizontal slot) or B (end of vertical slot) recur for next cell
+    if rules[row][col] == 'R' or rules[row][col] == 'B':
+        if solve(board, row, col + 1, top, left, bottom, right, rules):
+            return True
+
+    # if horizontal slot contains L and R
+    if rules[row][col] == 'L' and rules[row][col + 1] == 'R':
+        # put ('+', '-') pair and recur
+        if isSafe(board, row, col, '+', top, left, bottom, right) and isSafe(board, row, col + 1, '-', top, left, bottom, right):
+            board[row][col] = '+'
+            board[row][col + 1] = '-'
+            if solve(board, row, col + 2, top, left, bottom, right, rules):
+                return True
+            # if it doesn't lead to a solution, backtrack
+            board[row][col] = 'X'
+            board[row][col + 1] = 'X'
+
+        # put ('-', '+') pair and recur
+        if isSafe(board, row, col, '-', top, left, bottom, right) and isSafe(board, row, col + 1, '+', top, left, bottom, right):
+            board[row][col] = '-'
+            board[row][col + 1] = '+'
+            if solve(board, row, col + 2, top, left, bottom, right, rules):
+                return True
+            # if it doesn't lead to a solution, backtrack
+            board[row][col] = 'X'
+            board[row][col + 1] = 'X'
+
+    # if vertical slot contains T and B
+    if rules[row][col] == 'T' and rules[row + 1][col] == 'B':
+        # put ('+', '-') pair and recur
+        if isSafe(board, row, col, '+', top, left, bottom, right) and isSafe(board, row + 1, col, '-', top, left, bottom, right):
+            board[row][col] = '+'
+            board[row + 1][col] = '-'
+            if solve(board, row, col + 1, top, left, bottom, right, rules):
+                return True
+            # if it doesn't lead to a solution, backtrack
+            board[row][col] = 'X'
+            board[row + 1][col] = 'X'
+
+        # put ('-', '+') pair and recur
+        if isSafe(board, row, col, '-', top, left, bottom, right) and isSafe(board, row + 1, col, '+', top, left, bottom, right):
+            board[row][col] = '-'
+            board[row + 1][col] = '+'
+            if solve(board, row, col + 1, top, left, bottom, right, rules):
+                return True
+            # if it doesn't lead to a solution, backtrack
+            board[row][col] = 'X'
+            board[row + 1][col] = 'X'
+
+    # ignore current cell and recur
+    if solve(board, row, col + 1, top, left, bottom, right, rules):
+        return True
+
+    # if no solution is possible, return false
+    return False
+
+
 if __name__ == '__main__':
     # indicates the count of + or - at the top (+), bottom (-), left (+) and right (-) edges respectively.
     # value of -1 indicates any number of + or - signs
@@ -72,7 +139,7 @@ if __name__ == '__main__':
     right = [-1, -1, -1, 1, -1]
 
     # rules matrix
-    str = [
+    rules = [
         ['L', 'R', 'L', 'R', 'T', 'T'],
         ['L', 'R', 'L', 'R', 'B', 'B'],
         ['T', 'T', 'T', 'T', 'L', 'R'],
