@@ -1,8 +1,12 @@
 /*
-Non-Recursive Segment tree 
+Non-Recursive Segment tree
+with addition operation 
+uses template so any datastructure
+which supports addition can be used
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 template <typename T = int>
@@ -16,12 +20,17 @@ public:
     {
         // constructor to allocate memorey to array
         size = 1;
+        // computes the next power of 2
+        // so as to create a perfect tree
+        // they form leaf nodes of the tree
+        // unused index will be zero
         while (size <= n)
             size *= 2;
+        //twice the size of leaf to form tree
         size *= 2;
         array.assign(size, 0);
     }
-    //build the tree using the vector a 
+    //build the tree using the vector a
     void build(vector<T> &a)
     {
         // loop to form all the leaf nodes of the segment tree
@@ -30,6 +39,8 @@ public:
             array[i] = a[i - size / 2];
         }
         // constructing segment tree
+        // computes value of all nodes at one level
+        // then moves up the one level
         for (int i = size / 4; i > 0; i /= 2)
         {
             // loop to form parent of the two children nodes
@@ -38,6 +49,7 @@ public:
                 array[j] = array[2 * j] + array[2 * j + 1];
             }
         }
+        //index zero of the array is not used in the tree
     }
 
     void set(int pos, T num)
@@ -73,6 +85,7 @@ public:
     }
 };
 
+//Driver program to test the segment tree
 int main()
 {
     vector<long> a = {1, 3, 5, 7, 5, 2, 4, 5, 5};
