@@ -49,21 +49,18 @@ def validate(board, top, left, bottom, right):
     for i in range(N):
         if top[i] != -1 and countInColumn(board, '+', i) != top[i]:
             return False
-    for j in range(M):
-        if left[j] != -1 and countInRow(board, '+', j) != left[j]:
-            return False
-    for i in range(N):
         if bottom[i] != -1 and countInColumn(board, '-', i) != bottom[i]:
             return False
     for j in range(M):
+        if left[j] != -1 and countInRow(board, '+', j) != left[j]:
+            return False
         if right[j] != -1 and countInRow(board, '-', j) != right[j]:
             return False
-
     # Passed all checks, valid board
     return True
 
 
-def solve(board, row, col, top, left, bottom, right, rules):
+def solve(board, row, col, top, left, bottom, right, slots):
     # if we have reached last cell
     if row >= M - 1 and col >= N - 1:
         return validate(board, top, left, bottom, right)
@@ -74,17 +71,17 @@ def solve(board, row, col, top, left, bottom, right, rules):
         row = row + 1
 
     # if current cell contains R (end of horizontal slot) or B (end of vertical slot) recur for next cell
-    if rules[row][col] == 'R' or rules[row][col] == 'B':
-        if solve(board, row, col + 1, top, left, bottom, right, rules):
+    if slots[row][col] == 'R' or slots[row][col] == 'B':
+        if solve(board, row, col + 1, top, left, bottom, right, slots):
             return True
 
     # if horizontal slot contains L and R
-    if rules[row][col] == 'L' and rules[row][col + 1] == 'R':
+    if slots[row][col] == 'L' and slots[row][col + 1] == 'R':
         # put ('+', '-') pair and recur
         if isSafe(board, row, col, '+', top, left, bottom, right) and isSafe(board, row, col + 1, '-', top, left, bottom, right):
             board[row][col] = '+'
             board[row][col + 1] = '-'
-            if solve(board, row, col + 2, top, left, bottom, right, rules):
+            if solve(board, row, col + 2, top, left, bottom, right, slots):
                 return True
             # if it doesn't lead to a solution, backtrack
             board[row][col] = 'X'
@@ -94,19 +91,19 @@ def solve(board, row, col, top, left, bottom, right, rules):
         if isSafe(board, row, col, '-', top, left, bottom, right) and isSafe(board, row, col + 1, '+', top, left, bottom, right):
             board[row][col] = '-'
             board[row][col + 1] = '+'
-            if solve(board, row, col + 2, top, left, bottom, right, rules):
+            if solve(board, row, col + 2, top, left, bottom, right, slots):
                 return True
             # if it doesn't lead to a solution, backtrack
             board[row][col] = 'X'
             board[row][col + 1] = 'X'
 
     # if vertical slot contains T and B
-    if rules[row][col] == 'T' and rules[row + 1][col] == 'B':
+    if slots[row][col] == 'T' and slots[row + 1][col] == 'B':
         # put ('+', '-') pair and recur
         if isSafe(board, row, col, '+', top, left, bottom, right) and isSafe(board, row + 1, col, '-', top, left, bottom, right):
             board[row][col] = '+'
             board[row + 1][col] = '-'
-            if solve(board, row, col + 1, top, left, bottom, right, rules):
+            if solve(board, row, col + 1, top, left, bottom, right, slots):
                 return True
             # if it doesn't lead to a solution, backtrack
             board[row][col] = 'X'
@@ -116,14 +113,14 @@ def solve(board, row, col, top, left, bottom, right, rules):
         if isSafe(board, row, col, '-', top, left, bottom, right) and isSafe(board, row + 1, col, '+', top, left, bottom, right):
             board[row][col] = '-'
             board[row + 1][col] = '+'
-            if solve(board, row, col + 1, top, left, bottom, right, rules):
+            if solve(board, row, col + 1, top, left, bottom, right, slots):
                 return True
             # if it doesn't lead to a solution, backtrack
             board[row][col] = 'X'
             board[row + 1][col] = 'X'
 
     # ignore current cell and recur
-    if solve(board, row, col + 1, top, left, bottom, right, rules):
+    if solve(board, row, col + 1, top, left, bottom, right, slots):
         return True
 
     # if no solution is possible, return false
@@ -137,9 +134,7 @@ if __name__ == '__main__':
     bottom = [2, -1, -1, 2, -1, 3]
     left = [2, 3, -1, -1, -1]
     right = [-1, -1, -1, 1, -1]
-
-    # rules matrix
-    rules = [
+    slots = [
         ['L', 'R', 'L', 'R', 'T', 'T'],
         ['L', 'R', 'L', 'R', 'B', 'B'],
         ['T', 'T', 'T', 'T', 'L', 'R'],
@@ -148,11 +143,8 @@ if __name__ == '__main__':
     ]
 
     (M, N) = (5, 6)
-    # to store result initialize all cells by 'X'
     board = [['X' for x in range(N)] for y in range(M)]
-
-    # start from (0, 0) cell
-    if solve(board, 0, 0, top, left, bottom, right, rules):
+    if solve(board, 0, 0, top, left, bottom, right, slots):
         for i in range(M):
             for j in range(N):
                 print(board[i][j], end=' ')
