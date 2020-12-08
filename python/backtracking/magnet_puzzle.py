@@ -1,21 +1,23 @@
+# A utility function to count number of characters ch in current column j
+def countInColumn(board, ch, j):
+    count = 0
+    for i in range(M):
+        if board[i][j] == ch:
+            count = count + 1
+    return count
+
+
+# A utility function to count number of characters ch in current row i
+def countInRow(board, ch, i):
+    count = 0
+    for j in range(N):
+        if board[i][j] == ch:
+            count = count + 1
+    return count
+
+
 # Function to check if it safe to put 'ch' at board[row][col]
 def isSafe(board, row, col, ch, top, left, bottom, right):
-    # A utility function to count number of characters ch in current column j
-    def countInColumn(board, ch, j):
-        count = 0
-        for i in range(M):
-            if board[i][j] == ch:
-                count = count + 1
-        return count
-
-    # A utility function to count number of characters ch in current row i
-    def countInRow(board, ch, i):
-        count = 0
-        for j in range(N):
-            if board[i][j] == ch:
-                count = count + 1
-        return count
-
     # check for contents of adjacent cells to ensure they don't contain same character
     if ((row - 1 >= 0 and board[row - 1][col] == ch) or (col + 1 < N and board[row][col + 1] == ch) or
             (row + 1 < M and board[row + 1][col] == ch) or (col - 1 >= 0 and board[row][col - 1] == ch)):
@@ -39,6 +41,25 @@ def isSafe(board, row, col, ch, top, left, bottom, right):
             return False
 
     # Passed all checks, allowed to put character in the board
+    return True
+
+
+# Function to validate Configuration of output board
+def validate(board, top, left, bottom, right):
+    for i in range(N):
+        if top[i] != -1 and countInColumn(board, '+', i) != top[i]:
+            return False
+    for j in range(M):
+        if left[j] != -1 and countInRow(board, '+', j) != left[j]:
+            return False
+    for i in range(N):
+        if bottom[i] != -1 and countInColumn(board, '-', i) != bottom[i]:
+            return False
+    for j in range(M):
+        if right[j] != -1 and countInRow(board, '-', j) != right[j]:
+            return False
+
+    # Passed all checks, valid board
     return True
 
 
