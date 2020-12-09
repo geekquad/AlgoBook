@@ -1,3 +1,4 @@
+num = int(input("Enter a number: "))
 def factorial(num):
   if num == 1:
     return 1
@@ -9,6 +10,6 @@ def fact(num):
     result = result * i
   return result
 
-print(fact(6))
+print(fact(num))
   
-print(factorial(4))
+print(factorial(num))
