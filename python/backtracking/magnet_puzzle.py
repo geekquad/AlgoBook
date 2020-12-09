@@ -149,6 +149,7 @@ class MagnetPuzzle:
         """
         
         if self.solve(0, 0):
+            print("\nSolution exists")
             for i in range(self.M):
                 for j in range(self.N):
                     print(self.board[i][j], end=' ')
@@ -158,19 +159,54 @@ class MagnetPuzzle:
 
 
 if __name__ == '__main__':
-    # value of -1 indicates any number of + or - signs
-    top = [3, -1, -1, 2, 1, -1]
-    bottom = [2, -1, -1, 2, -1, 3]
-    left = [2, 3, -1, -1, -1]
-    right = [-1, -1, -1, 1, -1]
-    slots = [
-        ['L', 'R', 'L', 'R', 'T', 'T'],
-        ['L', 'R', 'L', 'R', 'B', 'B'],
-        ['T', 'T', 'T', 'T', 'L', 'R'],
-        ['B', 'B', 'B', 'B', 'T', 'T'],
-        ['L', 'R', 'L', 'R', 'B', 'B']
-    ]
-    (M, N) = (5, 6)
+    try:
+        print("Dimensions must be such that there are even number of cells")
+        M, N = list(map(int, input('Enter the board dimensions : ').split())) 
+        if M*N % 2 != 0:
+            raise Exception
+        
+        print('Enter -1 if any number of characters allowed')
+        top = list(map(int, input('Enter "+" for columns : ').split()))
+        if len(top) != N:
+            raise Exception
+        
+        bottom = list(map(int, input('Enter "-" for columns : ').split()))
+        if len(bottom) != N:
+            raise Exception
 
+        left = list(map(int, input('Enter "+" for rows : ').split()))
+        if len(left) != M:
+            raise Exception
+
+        right = list(map(int, input('Enter "-" for rows : ').split()))
+        if len(right) != M:
+            raise Exception
+
+        slots = [list(map(str, input('Input slots corresponding to row ' + str(i+1) + ": ").split())) for i in range(M)]
+        if len(slots) != M:
+            raise Exception
+        for i in range(len(slots)):
+            if len(slots[i]) != N:
+                raise Exception
+    except Exception:
+        print("\nUsing default values since wrong input was given\n")
+        (M, N) = (5, 6)
+        top = [3, -1, -1, 2, 1, -1]
+        bottom = [2, -1, -1, 2, -1, 3]
+        left = [2, 3, -1, -1, -1]
+        right = [-1, -1, -1, 1, -1]
+        slots = [
+            ['L', 'R', 'L', 'R', 'T', 'T'],
+            ['L', 'R', 'L', 'R', 'B', 'B'],
+            ['T', 'T', 'T', 'T', 'L', 'R'],
+            ['B', 'B', 'B', 'B', 'T', 'T'],
+            ['L', 'R', 'L', 'R', 'B', 'B']
+        ]
+        
+    print("Top : ", top)
+    print("Bottom : ", bottom)
+    print("Left : ", left)
+    print("Right : ", right)
+    print("Slots given : ", slots)
     ob = MagnetPuzzle((M, N), top, bottom, left, right, slots)
     ob.display()
