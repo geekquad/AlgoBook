@@ -1,29 +1,40 @@
 class MagnetPuzzle:
+    """Class to solve the magnet puzzle solution"""
+
     def __init__(self, size, top, bottom, left, right, slots):
+        """
+        Constructor which takes input values
+        Parameters
+        size   - the size of the board in the form of a tuple
+        top    - array with entries corresponding to '+' in columns
+        bottom - array with entries corresponding to '-' in columns
+        left   - array with entries corresponding to '+' in rows
+        right  - array with entries corresponding to '-' in rows
+        slots  - matrix that stores the data of slots LR for horizontal slot TB for vertical slot
+        """
+
         self.M, self.N = size
         self.top, self.bottom, self.left, self.right = top, bottom, left, right
         self.slots = slots
         self.board = [['X' for j in range(N)] for i in range(M)]
 
-    def display(self):
-        if self.solve(0, 0):
-            for i in range(self.M):
-                for j in range(self.N):
-                    print(self.board[i][j], end=' ')
-                print()
-        else:
-            print("Solution does not exist")
-
-    # Function to check if it safe to put 'ch' at board[row][col]
+    
     def checkConstraints(self, row, col, ch):
-        # check for contents of orthogonal adjacent cells to ensure they don't contain same character
+        """
+        Function to check if it safe to put 'ch' at board[row][col]
+        Parameters
+        row, col - cell where the chracter ch is to put
+        ch       - the character to be put
+        """
+        
+        # Check for contents of orthogonal adjacent cells to ensure they don't contain same character
         board = self.board
         top, bottom = row - 1 >= 0 and board[row - 1][col] == ch, row + 1 < M and board[row + 1][col] == ch
         left, right = col - 1 >= 0 and board[row][col - 1] == ch, col + 1 < N and board[row][col + 1] == ch
         if top or right or bottom  or left:
             return False
 
-        # if given character is '+', check top & left if given character is '-', check bottom & right
+        # If given character is '+', check top & left if given character is '-', check bottom & right
         top, bottom, left, right = self.top, self.bottom, self.left, self.right
         rowCount = sum([board[row][j] == ch for j in range(self.N)])
         colCount = sum([board[i][col] == ch for i in range(self.M)])
@@ -36,8 +47,12 @@ class MagnetPuzzle:
         
         return True
 
-    # Function to validate Configuration of output board
+    
     def validate(self):
+        """
+        Function to validate Configuration of output board
+        """
+        
         def countInRow(ch, i):
             return sum([self.board[i][j] == ch for j in range(self.N)])
         for i in range(self.M):
@@ -53,6 +68,13 @@ class MagnetPuzzle:
         return True
 
     def solve(self, row, col):
+        """
+        Function that solves the board given the initial conditions
+        Parameters
+        row - starting cell row index
+        col - starting cell column index
+        """
+        
         top, bottom, left, right = self.top, self.bottom, self.left, self.right
         slots, board = self.slots, self.board
         checkConstraints = self.checkConstraints
@@ -121,10 +143,23 @@ class MagnetPuzzle:
         return False
 
 
+    def display(self):
+        """
+        Display the solved board or error message if no solution exists
+        """
+        
+        if self.solve(0, 0):
+            for i in range(self.M):
+                for j in range(self.N):
+                    print(self.board[i][j], end=' ')
+                print()
+        else:
+            print("Solution does not exist")
+
+
 if __name__ == '__main__':
-    # indicates the count of + or - at the top (+), bottom (-), left (+) and right (-) edges respectively.
     # value of -1 indicates any number of + or - signs
-    top = [1, -1, -1, 2, 1, -1]
+    top = [3, -1, -1, 2, 1, -1]
     bottom = [2, -1, -1, 2, -1, 3]
     left = [2, 3, -1, -1, -1]
     right = [-1, -1, -1, 1, -1]
