@@ -30,7 +30,12 @@ def FiboSearch(arr, num):
         return offset + 1
     return -1
 
-arr = [10, 15, 28, 34, 58, 59, 60, 73, 106, 112, 128] 
-num =112
+arr = []
+n=int(input("enter the number of elements you want to enter")
+for i in range(0,n):
+      ele=int(input())
+      arr.append(ele)
+ 
+num =int(input())
 
 print('found at index :',FiboSearch(arr, num))
