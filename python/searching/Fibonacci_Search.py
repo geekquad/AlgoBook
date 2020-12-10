@@ -36,6 +36,6 @@ for i in range(0,n):
       ele=int(input("enter elements to sorted array))
       arr.append(ele)
  
-num =int(input())
+num =int(input("enter the number you want to search"))
 
 print('found at index :',FiboSearch(arr, num))
