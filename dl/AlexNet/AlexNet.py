@@ -102,4 +102,4 @@ validation_steps = validation_generator.n//validation_generator.batch_size
 history= model.fit(x=train_generator,epochs=epochs,steps_per_epoch=steps_per_epoch,validation_data=validation_generator,
                   validation_steps=validation_steps)
 scoreSeg = model.evaluate_generator(validation_generator)
-print("Accuracy = ",scoreSeg[1]*100)
+print("Accuracy  = ",scoreSeg[1]*100)
