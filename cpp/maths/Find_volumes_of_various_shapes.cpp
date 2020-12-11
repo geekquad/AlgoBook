@@ -45,38 +45,64 @@ void volume_of_circular_cylinder(float height , float radius){
 
 int main(){
     float side,side1,side2,side3,height,radius,area,blength,width;
-    cout << "Enter side of cube" << endl;
-    cin >> side ;
-    volume_of_cube(side);
+    cout << "Enter your option for finding volume of desired shape" << endl;
+    cout << "Enter 1 for Cube , 2 for Cuboid , 3 for Cone , 4 for Right circular cone" << endl;
+    cout << "Enter 5 for Prism , 6 for Pyramid , 7 for Sphere , 8 for Circular Cylinder" << endl;
+    cout << "Enter your choice" << endl;
+    int choice;
+    cin >> choice ;
+    switch(choice){
+        case 1:
+        cout << "Enter side of cube" << endl;
+        cin >> side ;
+        volume_of_cube(side);
+        break;
 
-    cout << "Enter side of cuboid" << endl;
-    cin >> side1 >> side2 >> side3 ;
-    volume_of_cuboid(side1 , side2 ,side3);
+        case 2:
+        cout << "Enter side of cuboid" << endl;
+        cin >> side1 >> side2 >> side3 ;
+        volume_of_cuboid(side1 , side2 ,side3);
+        break;
 
-    cout << "Enter height and radius of cone" << endl;
-    cin >> height >> radius ;
-    volume_of_cone(height , radius);
+        case 3:
+        cout << "Enter height and radius of cone" << endl;
+        cin >> height >> radius ;
+        volume_of_cone(height , radius);
+        break;
 
-    cout << "Enter height and radius of Right circular cone" << endl;
-    cin >> height >> radius ;
-    volume_of_rt_circular_cone(height , radius);
+        case 4:
+        cout << "Enter height and radius of Right circular cone" << endl;
+        cin >> height >> radius ;
+        volume_of_rt_circular_cone(height , radius);
+        break;
 
-    cout << "Enter height and base area of Prism" << endl;
-    cin >> height >> area ;
-    volume_of_prism(area, height);
+        case 5:
+        cout << "Enter height and base area of Prism" << endl;
+        cin >> height >> area ;
+        volume_of_prism(area, height);
+        break;
 
-    cout << "Enter base length ,width , height of Pyramid" << endl;
-    cin >> blength >> width >> height >> area ;
-    volume_of_pyramid(blength , width , height);
+        case 6:
+        cout << "Enter base length ,width , height of Pyramid" << endl;
+        cin >> blength >> width >> height >> area ;
+        volume_of_pyramid(blength , width , height);
+        break;
 
-    cout << "Enter radius of sphere" << endl;
-    cin >> radius ;
-    volume_of_sphere( radius);
+        case 7:
+        cout << "Enter radius of sphere" << endl;
+        cin >> radius ;
+        volume_of_sphere( radius);
+        break;
 
-    cout << "Enter height and radius of circular cylinder" << endl;
-    cin >> height >> radius ;
-    volume_of_circular_cylinder(height , radius);
+        case 8:
+        cout << "Enter height and radius of circular cylinder" << endl;
+        cin >> height >> radius ;
+        volume_of_circular_cylinder(height , radius);
+        break;
 
+        default:
+        cout << "Wrong Choice" << endl;
+    }
 
     return 0;
 }
