@@ -19,4 +19,4 @@ def calculate_sum(n) :
   
 if __name__ == "__main__":
   n = int(input("Enter last row number: "))
-  print("Sum of all elements:", calculateSum(n))
+  print("Sum of all elements:", calculate_sum(n))
