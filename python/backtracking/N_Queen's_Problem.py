@@ -88,9 +88,9 @@ def solveNQ():
 # Driver Code 
 solveNQ() 
 
-/* Output:The 1 values indicate placements of queens
+""" Output:The 1 values indicate placements of queens
  0  0  1  0 
  1  0  0  0 
  0  0  0  1 
- 0  1  0  0   */
+ 0  1  0  0   """
  
