@@ -30,8 +30,9 @@ We want your work to be readable by others; therefore, we encourage you to note 
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to. Please contact us on our <a href="https://join.slack.com/t/geekquad/shared_invite/zt-i117xz40-6eN05mvvci4eIdsrU1ehcA"> Slack </a> channel.
 - If you have modified/added code work, make sure the code compiles before submitting.
 - If you have modified/added documentation work, ensure your language is concise and contains no grammar errors.
+- At once, you are asslowed to get 3 issues per segment.
 - Do not update the README.md and CONTRIBUTING.md.
 
-**Join our <a href="https://join.slack.com/t/geekquad/shared_invite/zt-i117xz40-6eN05mvvci4eIdsrU1ehcA"> Slack </a> channel now.**
+**Join our <a href="https://join.slack.com/t/geekquad/shared_invite/zt-jtdqxt2r-i9R7vvNPzveImCBBM~eahw"> Slack </a> channel now.**
 Happy Coding :)
 
