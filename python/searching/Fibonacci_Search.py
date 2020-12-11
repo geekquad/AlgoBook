@@ -31,11 +31,11 @@ def FiboSearch(arr, num):
     return -1
 
 arr = []
-n=int(input("enter the number of elements you want to enter")
+n=int(input("enter the number of elements you want to enter"))
 for i in range(0,n):
-      ele=int(input("enter elements to sorted array))
-      arr.append(ele)
+    ele=int(input("enter element {} : ".format(i+1)))
+    arr.append(ele)
  
-num =int(input("enter the number you want to search"))
+num =int(input("enter the number you want to search : "))
 
 print('found at index :',FiboSearch(arr, num))
