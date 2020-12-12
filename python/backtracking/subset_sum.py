@@ -9,9 +9,16 @@ def SubsetSum(set, n, sum) :
     return SubsetSum(set, n-1, sum) or SubsetSum(set, n-1, sum-set[n-1]) 
       
       
-set = [2,3,6,4.1,56] 
-sum = 11
-n = len(set) 
+
+n=int(input("number of elements :- "))
+sum=int(input("Enter the sum:- ")) 
+print("elements in the set:-")
+arr=[]
+for i in range(0,n):
+     arr[i]=int(input(" "))
+     arr.append(arr[i])
+
+    
 if (SubsetSum(set, n, sum) == True) : 
     print("Found a subset with given sum") 
 else : 
