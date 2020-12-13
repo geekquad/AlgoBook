@@ -13,7 +13,7 @@ def calculate_sum(n) :
     sum = 0
       
     # Calculate 2 ^ n 
-    sum = 1 << n; 
+    sum = 1 << (n + 1); 
       
     return (sum - 1) 
   
