@@ -35,3 +35,17 @@ main() {
       cout << "\n";
    }
 }
+/* Example input and output
+Enter no of vertices: 3
+Enter no of edges: 5
+Enter the EDGE Cost:
+1 2 4
+2 1 6
+1 3 11
+3 1 3
+2 3 2
+Resultant adj matrix
+0 4 6 
+5 0 2 
+3 7 0 
+*/
