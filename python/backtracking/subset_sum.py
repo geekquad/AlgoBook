@@ -15,13 +15,13 @@ def SubsetSum(set, n, sum) :
 n=int(input("number of elements :- "))  #n=5 , let the number of elements in the set be 5
 sum=int(input("Enter the sum:- "))      #sum=4 , the sum which we need to search is 4
 print("elements in the set:-")
-arr=[]
+a=[]
 for i in range(0,n):
-     arr[i]=int(input(" "))
-     arr.append(arr[i])                  #arr=[2,2,3,6,9] , this is the list of numbers we have
+     value = int(input("Please enter the %d Element : " %i))
+     a.append(value)                    #arr=[2,2,3,6,9] , this is the list of numbers we have
 
     
-if (SubsetSum(set, n, sum) == True) : 
+if (SubsetSum(a, n, sum) == True) : 
     print("Found a subset with given sum") 
 else : 
     print("No subset with given sum") 
