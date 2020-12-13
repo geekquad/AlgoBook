@@ -1,0 +1,10 @@
+download and install nltk, punkt as follows:
+
+pip install nltk   (in prompt)
+
+nltk.download('punkt')   (in notebook)
+
+     ****************************************
+
+  The program was created and ran on python 3.7   
+
