@@ -15,7 +15,7 @@ int main()
      cin>>low;
      cout<<"Enter upper limit of integration: ";
      cin>>up;
-     cout<<"Enter number of sub intervals: ";
+     cout<<"Enter number of intervals: ";
      cin>>n;
      cout<< endl <<"Required value of integration is: "<< simpsons(low, up, n);
      return 0;
