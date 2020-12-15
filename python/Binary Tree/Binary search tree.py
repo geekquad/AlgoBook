@@ -32,7 +32,20 @@ def inorder(root):
         print (root.key) 
         inorder(root.right)  
   
-  
+# A function to do pre-order traversal of BST
+def pre_order(root):
+    if root is not None:
+        print(root.key)
+        pre_order(root.left)
+        pre_order(root.right)
+
+# A function to do post-order traversal of BST
+def post_order(root):
+    if root is not None:
+        post_order(root.left)
+        post_order(root.right)
+        print(root.key)
+        
 # A function to insert a new node with given key in BST 
 def insert( node, key): 
   
@@ -126,7 +139,11 @@ root = insert(root, 80)
 print ("Inorder traversal of the given tree")
 inorder(root) 
 
-   
+print ("Pre-order traversal of the tree is")
+pre_order(root)
+
+print ("Post-order traversal of the tree is")
+post_order(root)
 
 print ("\nDelete 20")
 root = deleteNode(root, 20)
