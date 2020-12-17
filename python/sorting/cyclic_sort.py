@@ -37,9 +37,11 @@ def cycle_sort(num_list):
             writes += 1
  
     return writes
- 
- 
-num_list = [75, 16, 55, 19, 48, 14, 2, 61, 22, 100]
-print("Before: ", num_list)
-cycle_sort(num_list)
-print("After:  ", num_list)
+
+if __name__ =="__main__":
+    input_array=input("Enter the elements seperated by space ").strip()
+    num_list=[int(num) for num in input_array.split()]
+    #prints the writes
+    print(cycle_sort(num_list)
+    #prints the sorted list
+    print(num_list)
