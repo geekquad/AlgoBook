@@ -42,6 +42,6 @@ if __name__ =="__main__":
     input_array=input("Enter the elements seperated by space ").strip()
     num_list=[int(num) for num in input_array.split()]
     #prints the writes
-    print(cycle_sort(num_list)
+    print(cycle_sort(num_list))
     #prints the sorted list
     print(num_list)
