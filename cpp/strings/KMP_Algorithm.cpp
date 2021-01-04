@@ -70,3 +70,13 @@ int main()
     KMP(pattern,text,n,m);
     return 0;
 }
+
+/* INPUT: 
+   text: qwertyqwertyqwerty
+   pattern: qwerty
+   
+   OUTPUT:
+   Pattern is found at index :0
+   Pattern is found at index :6
+   Pattern is found at index :12
+   */
