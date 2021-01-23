@@ -128,7 +128,7 @@ Feel free to reach out to us. Rememeber, collaboration is the key to open-source
 
 ## Please STAR :star2: this repository if you liked it and had fun :)
 
-### Follow us too! :blush:
+### Maintainers! :blush:
 
 <table>
   <tbody><tr>
@@ -136,5 +136,18 @@ Feel free to reach out to us. Rememeber, collaboration is the key to open-source
     <td align="center"><a href="https://github.com/major-beast"><img alt="" src="https://avatars.githubusercontent.com/major-beast" width="100px;"><br><sub><b>Paurush Tiwari</b></sub></a><br><a href="https://github.com/geekquad/AlgoBook/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
   </tr>
 </tbody></table>
+
+## Community
+
+Join our [Slack community](https://join.slack.com/t/geekquad/shared_invite/zt-l3t67zvr-JMKbn57PpxjEi7uC2k0etg) to get help in contributing, as well as stay up-to-date on issues and best practices.
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/geekquad/AlgoBook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=geekquad/AlgoBook" />
+</a>
+
+
+
 
 
