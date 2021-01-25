@@ -147,7 +147,9 @@ As always, thanks to our amazing contributors!
   <img src="https://contrib.rocks/image?repo=geekquad/AlgoBook" />
 </a>
 
+## Stargazers over time
 
+[![Stargazers over time](https://starchart.cc/geekquad/AlgoBook.svg)](https://starchart.cc/geekquad/AlgoBook)
 
 
 
