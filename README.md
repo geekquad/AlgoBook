@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
  
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;![GitHub contributors](https://img.shields.io/github/contributors-anon/geekquad/AlgoBook) ![Maintenance](https://img.shields.io/maintenance/yes/2021)![GitHub forks](https://img.shields.io/github/forks/geekquad/AlgoBook?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/geekquad/AlgoBook?style=social) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat) ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) ![](https://img.shields.io/github/repo-size/geekquad/AlgoBook.svg?label=Repo%20size&style=flat-square)&nbsp;![GitHub contributors](https://img.shields.io/github/contributors-anon/geekquad/AlgoBook) ![Maintenance](https://img.shields.io/maintenance/yes/2021) ![GitHub forks](https://img.shields.io/github/forks/geekquad/AlgoBook?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/geekquad/AlgoBook?style=social) 
 </p>
 A beginner friendly project to help you in open source contributions. An attempt to bring all the algorithms together. 
 
@@ -106,7 +106,7 @@ You have made it till the end. Kudos to you!!
 
 ## Contents
 
-Our content is basically divided into 4 segments for now. Please create an issue if you wish to add code in a language that we don't currently have here. 
+Our content is basically divided into 5 segments for now. Please create an issue if you wish to add code in a language that we don't currently have here. 
 
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/python"> Python</a>
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/ml"> ML</a>
