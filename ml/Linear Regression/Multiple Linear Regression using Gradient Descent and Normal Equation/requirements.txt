@@ -1,0 +1,5 @@
+REQUIREMENTS
+------------
+numpy 1.8.2
+matplotlib 3.2.2
+sklearn 0.24
