@@ -119,7 +119,7 @@ Our content is basically divided into 5 segments for now. Please create an issue
 * Your files should be uploaded directly into the corresponding folder (For instance, if you wrote code for an Algorithm Implementation in Python, it goes inside the Python folder and same goes for the ML Algorithm)
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so.**
 
-#### For any more issues and queries, please join our <a href="https://join.slack.com/t/geekquad/shared_invite/zt-jtdqxt2r-i9R7vvNPzveImCBBM~eahw"> Slack Channel. </a>
+#### For any more issues and queries, please join our <a href="https://discord.gg/Bvw8NR9VnM"> Discord server. </a>
 Feel free to reach out to us. Rememeber, collaboration is the key to open-source. 
 
 #### Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.
@@ -139,7 +139,7 @@ Feel free to reach out to us. Rememeber, collaboration is the key to open-source
 
 ## Community
 
-Join our [Slack community](https://join.slack.com/t/geekquad/shared_invite/zt-l3t67zvr-JMKbn57PpxjEi7uC2k0etg) to get help in contributing, as well as stay up-to-date on issues and best practices.
+Join our [Discord Server](https://discord.gg/Bvw8NR9VnM) to get help in contributing, as well as stay up-to-date on issues and best practices.
 
 As always, thanks to our amazing contributors!
 
