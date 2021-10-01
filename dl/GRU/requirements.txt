@@ -1,0 +1,19 @@
+# packages in environment at /home/lakhan/anaconda3/envs/ml:
+#
+# Name                    Version                   Build  Channel
+keras                     2.3.1                    pypi_0    pypi
+keras-applications        1.0.8                    pypi_0    pypi
+keras-preprocessing       1.1.0                    pypi_0    pypi
+matplotlib                3.1.0            py37h5429711_0  
+numpy                     1.16.4           py37h7e9f1db_0  
+numpy-base                1.16.4           py37hde5b4d6_0  
+pandas                    0.24.2           py37he6710b0_0  
+pandoc                    2.2.3.2                       0  
+pandocfilters             1.4.2                    py37_1  
+python                    3.7.3                h0371630_0  
+python-dateutil           2.8.0                    py37_0  
+scikit-learn              0.22             py37hd81dba3_0    anaconda
+tensorboard               2.0.2                    pypi_0    pypi
+tensorflow                2.0.0                    pypi_0    pypi
+tensorflow-estimator      2.0.1                    pypi_0  
+theano                    1.0.4                    pypi_0 
