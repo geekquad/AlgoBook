@@ -22,7 +22,7 @@ def prime_factors(n):
                 n = int(n / i)
             res.append(i)
 
-        # This condition is to handle the case
+    # This condition is to handle the case
     # when n is a prime number greater than 2
     if n > 2:
         res.append(n)
