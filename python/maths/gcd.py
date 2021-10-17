@@ -1,5 +1,5 @@
-
 def gcd(num1,num2): 
+    """Returns the GCD of the two elements."""
     if(num2==0): 
         return num1 
     else: 
