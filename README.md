@@ -120,7 +120,7 @@ Our content is basically divided into 5 segments for now. Please create an issue
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so.**
 
 #### For any more issues and queries, please join our <a href="https://discord.gg/Bvw8NR9VnM"> Discord server. </a>
-Feel free to reach out to us. Rememeber, collaboration is the key to open-source. 
+Feel free to reach out to us. Remember, collaboration is the key to open-source. 
 
 #### Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.
 
