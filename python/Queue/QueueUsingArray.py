@@ -29,8 +29,6 @@ class Queue:
 		self.rear +=1
 		self.arr[self.rear] = element
 		
-		
-
 	def pop(self) -> None:
 		popped = self.arr[self.f]
 		self.arr[self.f]  = -1
