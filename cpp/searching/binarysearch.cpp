@@ -16,7 +16,7 @@ int main()
         cin>>num;
 	first = 0;
 	last = count-1;
-	middle = (first+last)/2;
+	middle = first + (last - first) / 2;
 	while (first <= last)
 	{
 	   if(arr[middle] < num)
@@ -32,7 +32,7 @@ int main()
            else { 
                 last = middle - 1; 
            } 
-           middle = (first + last)/2; 
+           middle = first + (last - first) / 2; 
         } 
         if(first > last)
 	{
