@@ -312,18 +312,18 @@ class RedBlackTree():
             return
 
         if node.parent.parent == None:
-        return
+            return
 
-      self.fix_insert(node)
+        self.fix_insert(node)
 
-  def get_root(self):
-      return self.root
+    def get_root(self):
+        return self.root
 
-  def delete_node(self, item):
-      self.delete_node_helper(self.root, item)
+    def delete_node(self, item):
+        self.delete_node_helper(self.root, item)
 
-  def print_tree(self):
-      self.__print_helper(self.root, "", True)
+    def print_tree(self):
+        self.__print_helper(self.root, "", True)
 
 
 if __name__ == "__main__":
