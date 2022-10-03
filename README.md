@@ -48,7 +48,7 @@ git clone https://github.com/your_username/AlgoBook
 
 
 ### Step 2: Creating a New Branch
-It is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
+It is important to branch the repository so that you are Able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
 
 When creating a branch, it is very important that you create your new branch off of the master branch. 
 **To create a new branch, from your terminal window, follow:**
@@ -151,5 +151,7 @@ As always, thanks to our amazing contributors!
 
 [![Stargazers over time](https://starchart.cc/geekquad/AlgoBook.svg)](https://starchart.cc/geekquad/AlgoBook)
 
+
+Enjoy Repository!
 
 
