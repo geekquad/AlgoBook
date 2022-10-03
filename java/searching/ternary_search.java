@@ -1,87 +1,74 @@
-// Java program to illustrate
-// recursive approach to ternary search
-
-class GFG {
+class ternary_search {
 
 	// Function to perform Ternary Search
-	static int ternarySearch(int l, int r, int key, int ar[])
+	static int ternarySearch(int left, int right, int key, int arr[])
 	{
-		if (r >= l) {
+		if (right >= left) {
 
-			// Find the mid1 and mid2
-			int mid1 = l + (r - l) / 3;
-			int mid2 = r - (r - l) / 3;
+			//Finding two middle values
+			int middle1 = left + (right - left) / 3;
+			int middle2 = right - (right - left) / 3;
 
-			// Check if key is present at any mid
-			if (ar[mid1] == key) {
-				return mid1;
-			}
-			if (ar[mid2] == key) {
-				return mid2;
+			//Checking if key is present in either middle value
+
+			if (arr[middle1] == key) {
+				return middle1;
 			}
 
-			// Since key is not present at mid,
-			// check in which region it is present
-			// then repeat the Search operation
-			// in that region
-
-			if (key < ar[mid1]) {
-
-				// The key lies in between l and mid1
-				return ternarySearch(l, mid1 - 1, key, ar);
+			if (arr[middle2] == key) {
+				return middle2;
 			}
-			else if (key > ar[mid2]) {
 
-				// The key lies in between mid2 and r
-				return ternarySearch(mid2 + 1, r, key, ar);
+			//If the key is not present at mid
+			//check which region where key is located in
+
+			//If key is between left and middle1
+			if (key < arr[middle1]) {
+
+				return ternarySearch(left, middle1 - 1, key, arr);
 			}
+
+
+			//If key is between middle2 and right
+			else if (key > arr[middle2]) {
+				return ternarySearch(middle2 + 1, right, key, arr);
+			}
+
+			//If key is between two middle values
 			else {
-
-				// The key lies in between mid1 and mid2
-				return ternarySearch(mid1 + 1, mid2 - 1, key, ar);
+				return ternarySearch(middle1 + 1, middle2 - 1, key, arr);
 			}
+
+
 		}
 
-		// Key not found
+		//If Key is not in array
+
 		return -1;
 	}
 
 	// Driver code
 	public static void main(String args[])
 	{
-		int l, r, p, key;
+		int start, length, search, key;
 
-		// Get the array
-		// Sort the array if not sorted
-		int ar[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int arr[] = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
 
-		// Starting index
-		l = 0;
 
-		// length of array
-		r = 9;
+		//Represents starting index of array
+		start = 0;
 
-		// Checking for 5
+		//length of array
+		length = 9;
 
-		// Key to be searched in the array
-		key = 5;
-
-		// Search the key using ternarySearch
-		p = ternarySearch(l, r, key, ar);
-
-		// Print the result
-		System.out.println("Index of " + key + " is " + p);
-
-		// Checking for 50
-
-		// Key to be searched in the array
 		key = 50;
 
-		// Search the key using ternarySearch
-		p = ternarySearch(l, r, key, ar);
+		search = ternarySearch(start, length, key, arr);
 
-		// Print the result
-		System.out.println("Index of " + key + " is " + p);
+		System.out.println(key + " can be found at index: " + search);
+
+
 	}
 }
+
 
