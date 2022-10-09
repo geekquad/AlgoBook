@@ -15,6 +15,11 @@ class Stack(object):
         self.stack = []
         self.capacity = capacity
 
+    def __str__(self) -> str:
+        if self.is_empty():
+            return "** empty stack **"
+        return f"data: {self.stack} peek: {self.peek()}"
+
     def is_empty(self):
         return len(self.stack) <= 0
 
