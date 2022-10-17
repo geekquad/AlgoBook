@@ -113,6 +113,7 @@ Our content is basically divided into 5 segments for now. Please create an issue
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/dl"> DL</a>
 * <a href="https://github.com/geekquad/AlgoBook/tree/master/cpp"> cpp </a>
 * [go](https://github.com/geekquad/AlgoBook/tree/master/go)
+* [rust](https://github.com/geekquad/AlgoBook/tree/master/rust)
  
 ### Where to upload the files
 
