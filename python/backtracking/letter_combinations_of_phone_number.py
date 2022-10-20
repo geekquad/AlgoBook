@@ -2,7 +2,7 @@
 # A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
 def letterCombinations(digits) :
-  digit_letters = {
+  digitLetters = {
       "0":["0"],
       "1":["1"],
       "2":["a","b","c"],
@@ -16,11 +16,11 @@ def letterCombinations(digits) :
       }
 
   if len(digits) ==1:
-      return digit_letters[digits]
+      return digitLetters[digits]
   if len(digits)==0:
       return []
   res=[]
-  for char in digit_letters[digits[0]]:
+  for char in digitLetters[digits[0]]:
       for combination in letterCombinations(digits[1:]):
           res.append(char+combination)
   return res
