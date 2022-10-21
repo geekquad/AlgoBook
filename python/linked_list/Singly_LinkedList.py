@@ -99,3 +99,35 @@ class LinkedList:
             
         return output_list
     
+    def insert_at_position(self, pos, item):
+        """
+        Function to insert a node with a given item value at a given position.
+
+        Parameters:
+        pos (int): The position at which the new node is placed. Position is 0 indexed.
+        item (object): An item value to be placed inside a node.
+        """
+
+        # case of prepend
+        if pos == 0:
+            self.prepend(item)
+
+        # case of append
+        elif pos == self.size():
+            self.append(item)
+
+        # case at any position
+        else:
+            # traverse the linked list
+            node = self.head
+            count = 0
+            new_node = Node(item)
+            while node:
+                # previous node found
+                if pos == count+1:
+                    new_node.next = node.next
+                    node.next = new_node
+                    break
+                node = node.next
+                count += 1
+    
