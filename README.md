@@ -102,7 +102,7 @@ GitHub will alert you that you are able to merge the two branches because there 
 ### Step 7: CONGRATULATIONS :boom: :clap: :relaxed:
 You have made it till the end. Kudos to you!!
 
-<hr> </hr>
+<hr />
 
 ## Contents
 
