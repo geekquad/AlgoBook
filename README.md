@@ -124,7 +124,7 @@ Feel free to reach out to us. Remember, collaboration is the key to open-source.
 
 #### Please see the <a href="https://github.com/geekquad/AlgoBook/blob/master/CONTRIBUTING.md"> **Contributing Guidelines** </a>.
 
-<hr> </hr>
+<hr />
 
 ## Please STAR :star2: this repository if you liked it and had fun :)
 
