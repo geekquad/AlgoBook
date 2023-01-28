@@ -30,3 +30,24 @@ Next element in numbers array is 5  -  5 is the last element, so there is no pos
 
 """
 
+
+def next_greater(numbers):
+    monotonic_stack = []
+    answer = [0 for i in range(len(numbers))]
+
+    for i in range(len(numbers)-1, -1, -1):
+        while monotonic_stack and monotonic_stack[-1] < numbers[i]:
+            monotonic_stack.pop()
+        if monotonic_stack == []:
+            answer[i] = -1
+        else:
+            answer[i] = monotonic_stack[-1]
+        monotonic_stack.append(numbers[i])
+    return answer
+
+
+if __name__ == "__main__":
+    arr = [4, 12, 5, 31, 2, 5]
+    arr1 = [12,3,5,8,1,67]
+    print(next_greater(arr))  #[12, 31, 31, -1, 5, -1]
+    print(next_greater(arr))  #[67, 5, 8, 67, 67, -1]
