@@ -1,4 +1,4 @@
-from Reversing a string using Recursion.py import reverse
+from Reversing_a_string_using_Recursion.py import reverse
 
 def test_reverse():
   assert reverse("Hello")=="elloH"
