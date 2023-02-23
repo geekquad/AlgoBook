@@ -37,5 +37,5 @@ jobs:
    #   run: py-actions/flake8@v2
       
     - name: Run tests
-      run: pytest /home/runner/work/AlgoBook/AlgoBook/python/string algorithms/reverse_recursion_test.py
+      run: pytest reverse_recursion_test.py
       
