@@ -13,4 +13,4 @@ jobs:
       run: pip install pytest
       
     - name: Run tests
-      run: pytest .py
+      run: pytest reverse_recursion_test.py
