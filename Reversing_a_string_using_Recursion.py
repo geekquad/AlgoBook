@@ -1,4 +1,4 @@
-String = str(input("Enter a string: "))
+
 
 def reverse(word):
   size = len(word)
@@ -8,4 +8,4 @@ def reverse(word):
   print(last_char,end='')
   return reverse(word[0:size-1])
   
-reverse(String)
+
