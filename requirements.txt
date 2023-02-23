@@ -1,0 +1,7 @@
+numpy 
+pandas
+pillow
+scipy
+matplotlib
+plotly
+pytest
