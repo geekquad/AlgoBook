@@ -28,6 +28,7 @@ jobs:
       run: |
         # fail if there are any flake8 errors
         flake8 . --count --max-complexity=15 --max-line-length=127 --statistics
+
     - name: Check if 'Lint with flake8' step failed
       if: steps.flake8.outcome != 'success'
       run: |
@@ -37,3 +38,4 @@ jobs:
       
     - name: Run tests
       run: pytest tests/QuickSort_test.py
+      
