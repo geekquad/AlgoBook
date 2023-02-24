@@ -1,0 +1,41 @@
+name: Push Event Workflow
+
+on: push
+jobs:
+  unit-testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+      
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Install Package
+      run: pip install pytest
+      
+    - name: Lint with flake8
+      id: flake8
+      continue-on-error: true
+      run: |
+        # fail if there are any flake8 errors
+        flake8 . --count --max-complexity=15 --max-line-length=127 --statistics
+    - name: Check if 'Lint with flake8' step failed
+      if: steps.flake8.outcome != 'success'
+      run: |
+        echo "flake8 fails"
+  #  - name: flake8 
+   #   run: py-actions/flake8@v2
+      
+    - name: Run tests
+      run: pytest stack_test.py
+    - name: Run tests2
+      run: pytest tests/QuickSort_test.py
