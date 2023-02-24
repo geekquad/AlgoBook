@@ -1,3 +1,5 @@
+from numpy import random
+from random import randint
 def quicksort(array):
     # If the input array contains fewer than two elements,
     # then return it as the result of the function
