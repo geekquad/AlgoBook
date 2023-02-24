@@ -37,5 +37,5 @@ jobs:
    #   run: py-actions/flake8@v2
       
     - name: Run tests
-      run: pytest reverse_recursion_test.py
+      run: pytest stack_test.py
       
