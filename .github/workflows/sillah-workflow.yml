@@ -1,10 +1,6 @@
+name: Push Event Workflow
 
-name: Sillah Workflow
-
-on:
-  push:
-    branches:
-      - development
+on: push
 jobs:
   unit-testing:
     runs-on: ubuntu-latest
