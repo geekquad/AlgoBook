@@ -39,17 +39,3 @@ class Stack(object):
     def size(self):
         return len(self.stack)
 
-
-#if __name__ == "__main__":
-   # st = Stack()
- #   st.pop()            # Checking underflow condition
-   # st.push(10)
-   # st.push(20)
-   # st.push(30)
- #   st.push(40)
-  #  st.push(50)
-   # st.push(60)         # Checking overflow condition
-   # print(st.size())
-   # st.pop()
-   # st.pop()
-   # print(st.peek())
