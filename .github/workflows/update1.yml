@@ -37,3 +37,5 @@ jobs:
       
     - name: Run tests
       run: pytest stack_test.py
+    - name: Run tests2
+      run: pytest tests/QuickSort_test.py
