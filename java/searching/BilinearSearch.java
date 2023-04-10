@@ -3,7 +3,7 @@
  * position if the element is found. Return -1 if is not found.
  *
  * Time complexity: O(n)
- * Space complexity: O(n)
+ * Space complexity: O(1)
  *
  * To compile the file: javac BilinearSearch.java
  * To execute the bytecode file: java -ea BilinearSearch
