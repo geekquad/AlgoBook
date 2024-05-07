@@ -1,0 +1,79 @@
+/**
+ * A linked implementation of the Stack interface.
+ */
+public class LinkedStack<T> implements Stack<T> {
+
+    private static class Node<T> {
+        private T data;
+        private Node<T> next;
+
+        public Node(T data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    private Node<T> top;
+    private int size;
+
+    /**
+     * Constructs an empty LinkedStack.
+     */
+    public LinkedStack() {
+        top = null;
+        size = 0;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void push(T element) {
+        Node<T> newNode = new Node<>(element);
+        newNode.next = top;
+        top = newNode;
+        size++;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public T pop() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        T element = top.data;
+        top = top.next;
+        size--;
+        return element;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public T peek() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return top.data;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int size() {
+        return size;
+    }
+
+}
