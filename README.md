@@ -88,6 +88,10 @@ You can type the command ```git add -A``` or alternatively ```git add -all``` fo
  ```
  git push --set-upstream origin new-branch
  ```
+
+ ### Step 5: Pushing the Code
+
+ use use git push command to push the code
  
 ### Step 6: Create Pull Request
 At this point, you are ready to make a pull request to the original repository.
