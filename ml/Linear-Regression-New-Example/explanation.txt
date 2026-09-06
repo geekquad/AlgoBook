@@ -1,0 +1,841 @@
+# LINEAR REGRESSION
+
+1. WHAT IS LINEAR REGRESSION?
+
+---
+
+Linear Regression is a supervised machine learning algorithm used to predict a continuous numerical value.
+
+It finds the relationship between:
+
+* Input variable(s) -> Independent Variable (X)
+* Output variable -> Dependent Variable (Y)
+
+The goal is to find the best-fitting straight line through the given data points.
+
+Examples:
+
+* Predict house price based on area.
+* Predict salary based on years of experience.
+* Predict marks based on study hours.
+* Predict sales based on advertising expenditure.
+
+2. TYPE OF MACHINE LEARNING
+
+---
+
+Linear Regression is a:
+
+* Supervised Learning algorithm
+* Regression algorithm
+* Parametric algorithm
+
+Supervised learning means that the model learns from data where the correct output is already known.
+
+Example:
+
+## Study Hours (X)    Marks (Y)
+
+1                  35
+2                  40
+3                  50
+4                  60
+5                  70
+
+The model learns the relationship between study hours and marks.
+
+3. BASIC IDEA
+
+---
+
+Suppose we have some data points.
+
+The points may not lie exactly on a straight line.
+
+Linear Regression tries to find a line that represents the overall relationship between X and Y.
+
+This line is called the:
+
+"Line of Best Fit"
+
+4. LINEAR REGRESSION EQUATION
+
+---
+
+For Simple Linear Regression:
+
+y = mx + b
+
+Where:
+
+y = predicted value
+x = input feature
+m = slope of the line
+b = intercept
+
+In machine learning, it is commonly written as:
+
+y_hat = b0 + b1x
+
+Where:
+
+y_hat = predicted value
+b0 = intercept
+b1 = coefficient/slope
+x = input feature
+
+5. SLOPE
+
+---
+
+The slope tells us how much the predicted value of Y changes when X increases by one unit.
+
+Slope:
+
+m = change in y / change in x
+
+or
+
+m = (y2 - y1) / (x2 - x1)
+
+Example:
+
+If:
+
+x1 = 2
+y1 = 40
+
+x2 = 4
+y2 = 60
+
+Then:
+
+m = (60 - 40) / (4 - 2)
+m = 20 / 2
+m = 10
+
+This means that for every 1-unit increase in X, Y increases by approximately 10 units.
+
+6. INTERCEPT
+
+---
+
+The intercept is the value of Y when X is 0.
+
+For:
+
+y = mx + b
+
+b is the intercept.
+
+Example:
+
+y = 10x + 20
+
+When x = 0:
+
+y = 20
+
+Therefore, the intercept is 20.
+
+7. SIMPLE LINEAR REGRESSION
+
+---
+
+Simple Linear Regression uses only ONE input feature.
+
+Example:
+
+Predict salary using years of experience.
+
+X = Years of Experience
+Y = Salary
+
+Equation:
+
+salary = b0 + b1 * experience
+
+Example:
+
+salary = 25000 + 5000 * experience
+
+For 3 years of experience:
+
+salary = 25000 + 5000(3)
+salary = 40000
+
+Predicted salary = 40000
+
+8. MULTIPLE LINEAR REGRESSION
+
+---
+
+Multiple Linear Regression uses TWO OR MORE input features.
+
+Example:
+
+Predict house price using:
+
+* House area
+* Number of bedrooms
+* Age of house
+
+The equation becomes:
+
+y_hat = b0 + b1x1 + b2x2 + b3x3
+
+Where:
+
+x1 = house area
+x2 = number of bedrooms
+x3 = age of house
+
+Each coefficient tells us how that particular feature affects the prediction, while holding the other features constant.
+
+9. HOW LINEAR REGRESSION WORKS
+
+---
+
+The basic process is:
+
+Step 1:
+Collect data.
+
+Step 2:
+Separate the data into input (X) and output (Y).
+
+Step 3:
+Plot the data points.
+
+Step 4:
+Find the best-fitting line.
+
+Step 5:
+Calculate predictions using the line.
+
+Step 6:
+Calculate the error between actual and predicted values.
+
+Step 7:
+Adjust the model parameters to reduce the error.
+
+Step 8:
+Use the trained model to make predictions on new data.
+
+10. ACTUAL VALUE VS PREDICTED VALUE
+
+---
+
+Actual value:
+
+The real value present in the dataset.
+
+Predicted value:
+
+The value predicted by the model.
+
+Example:
+
+Actual marks = 70
+Predicted marks = 68
+
+Error:
+
+Error = Actual - Predicted
+
+Error = 70 - 68
+
+Error = 2
+
+11. RESIDUAL
+
+---
+
+A residual is the difference between the actual value and predicted value.
+
+Residual:
+
+e = y - y_hat
+
+Where:
+
+y = actual value
+y_hat = predicted value
+
+A good regression model generally has small residuals.
+
+12. COST FUNCTION
+
+---
+
+Linear Regression uses a cost function to measure how far the predictions are from the actual values.
+
+A commonly used cost function is:
+
+Mean Squared Error (MSE)
+
+MSE = (1/n) * SUM((y - y_hat)^2)
+
+Where:
+
+n = number of data points
+y = actual value
+y_hat = predicted value
+
+The goal is to minimize MSE.
+
+13. MEAN SQUARED ERROR
+
+---
+
+MSE calculates the average of the squared differences between actual and predicted values.
+
+Example:
+
+Actual values:
+
+10, 20, 30
+
+Predicted values:
+
+12, 18, 31
+
+Errors:
+
+-2, 2, -1
+
+Squared errors:
+
+4, 4, 1
+
+MSE:
+
+MSE = (4 + 4 + 1) / 3
+MSE = 3
+
+Lower MSE generally means that the predictions are closer to the actual values.
+
+14. LEAST SQUARES METHOD
+
+---
+
+The Least Squares Method is commonly used to find the best-fitting line.
+
+It chooses the line that minimizes the sum of squared residuals.
+
+In simple terms:
+
+Best line = line with the smallest total squared error.
+
+15. GRADIENT DESCENT
+
+---
+
+Gradient Descent is another important method used to find the best values of the model parameters.
+
+It repeatedly changes the parameters in a direction that reduces the cost function.
+
+Basic idea:
+
+1. Start with initial values for parameters.
+2. Calculate the error.
+3. Calculate the gradient.
+4. Update the parameters.
+5. Repeat until the cost becomes sufficiently small.
+
+The parameter update is generally represented as:
+
+new_parameter = old_parameter - learning_rate * gradient
+
+16. LEARNING RATE
+
+---
+
+Learning Rate controls how large each update is during Gradient Descent.
+
+If the learning rate is too large:
+
+* The model may overshoot the minimum.
+* Training may become unstable.
+
+If the learning rate is too small:
+
+* Training can take a long time.
+
+Therefore, a suitable learning rate is important.
+
+17. ASSUMPTIONS OF LINEAR REGRESSION
+
+---
+
+Linear Regression works best when certain assumptions approximately hold.
+
+1. LINEARITY
+
+There should be a roughly linear relationship between the input and output.
+
+2. INDEPENDENCE
+
+Observations should generally be independent of each other.
+
+3. HOMOSCEDASTICITY
+
+The variance of errors should be approximately constant.
+
+4. LOW MULTICOLLINEARITY
+
+For multiple linear regression, input features should not be highly correlated with each other.
+
+5. NORMALITY OF RESIDUALS
+
+For statistical inference, residuals are often expected to be approximately normally distributed.
+
+18. POSITIVE AND NEGATIVE RELATIONSHIP
+
+---
+
+Positive relationship:
+
+When X increases, Y tends to increase.
+
+Example:
+
+More study hours -> Higher marks
+
+The slope is positive.
+
+Negative relationship:
+
+When X increases, Y tends to decrease.
+
+Example:
+
+Higher speed -> Less travel time
+
+The slope is negative.
+
+19. CORRELATION VS LINEAR REGRESSION
+
+---
+
+Correlation measures the strength and direction of a relationship between variables.
+
+Linear Regression builds a model that can be used to predict one variable from another.
+
+Correlation:
+
+* Measures relationship.
+* Does not directly provide a prediction model.
+
+Linear Regression:
+
+* Models the relationship.
+* Can be used for prediction.
+
+20. R-SQUARED (R²)
+
+---
+
+R² is a metric used to measure how well the regression model explains the variation in the target variable.
+
+Its value is usually between 0 and 1 for standard regression settings.
+
+R² close to 1:
+
+The model explains a large portion of the variation.
+
+R² close to 0:
+
+The model explains very little of the variation.
+
+Formula:
+
+R² = 1 - (SS_res / SS_tot)
+
+Where:
+
+SS_res = Sum of Squared Residuals
+SS_tot = Total Sum of Squares
+
+21. MAE
+
+---
+
+MAE stands for Mean Absolute Error.
+
+It calculates the average absolute difference between actual and predicted values.
+
+Formula:
+
+MAE = (1/n) * SUM(|y - y_hat|)
+
+Example:
+
+Actual:
+
+10, 20, 30
+
+Predicted:
+
+12, 18, 31
+
+Absolute errors:
+
+2, 2, 1
+
+MAE:
+
+MAE = (2 + 2 + 1) / 3
+MAE = 1.67
+
+22. MSE VS MAE
+
+---
+
+MAE:
+
+* Uses absolute errors.
+* Easier to interpret.
+* Less affected by large errors.
+
+MSE:
+
+* Squares the errors.
+* Penalizes large errors more strongly.
+* Commonly used as a training loss for regression.
+
+23. ADVANTAGES
+
+---
+
+Advantages of Linear Regression:
+
+* Simple to understand.
+* Easy to implement.
+* Fast to train.
+* Computationally inexpensive.
+* Easy to interpret.
+* Works well when the relationship is approximately linear.
+* Useful as a baseline model.
+
+24. DISADVANTAGES
+
+---
+
+Disadvantages:
+
+* Assumes a linear relationship.
+* Sensitive to outliers.
+* Can perform poorly when the relationship is non-linear.
+* Multiple regression can suffer from multicollinearity.
+* Not suitable for every type of prediction problem.
+
+25. OUTLIERS
+
+---
+
+An outlier is a data point that is very different from the other data points.
+
+Example:
+
+Most salaries:
+
+30,000
+35,000
+40,000
+45,000
+
+Outlier:
+
+2,00,000
+
+Outliers can strongly affect the regression line because Linear Regression tries to minimize squared errors.
+
+26. UNDERFITTING
+
+---
+
+Underfitting occurs when the model is too simple to capture the important patterns in the data.
+
+Signs:
+
+* Poor performance on training data.
+* Poor performance on test data.
+
+Example:
+
+Using a straight line for data that has a strongly curved relationship.
+
+27. OVERFITTING
+
+---
+
+Overfitting occurs when a model learns the training data too closely, including noise.
+
+Signs:
+
+* Very good training performance.
+* Poor test performance.
+
+For basic Linear Regression, overfitting can also occur when many features or transformations are used without proper validation.
+
+28. TRAINING AND TESTING
+
+---
+
+Usually, the dataset is divided into:
+
+Training Data:
+Used to train the model.
+
+Testing Data:
+Used to evaluate the model on unseen data.
+
+Example:
+
+80% -> Training
+20% -> Testing
+
+The exact split can vary depending on the problem.
+
+29. BASIC LINEAR REGRESSION EXAMPLE
+
+---
+
+Suppose we have:
+
+## Study Hours    Marks
+
+1              35
+2              40
+3              50
+4              60
+5              70
+
+We want to predict marks based on study hours.
+
+X = Study Hours
+
+Y = Marks
+
+The model finds a line:
+
+y_hat = b0 + b1x
+
+After training, suppose the model finds:
+
+y_hat = 25 + 9x
+
+For 6 study hours:
+
+y_hat = 25 + 9(6)
+
+y_hat = 79
+
+Therefore:
+
+Predicted marks = 79
+
+30. LINEAR REGRESSION WITH PYTHON
+
+---
+
+A basic implementation can be done using Python and NumPy.
+
+Example:
+
+import numpy as np
+
+X = np.array([1, 2, 3, 4, 5])
+Y = np.array([35, 40, 50, 60, 70])
+
+The data can then be used to calculate the regression line.
+
+31. LINEAR REGRESSION USING SCIKIT-LEARN
+
+---
+
+Scikit-learn provides a ready-to-use LinearRegression model.
+
+Basic structure:
+
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+
+model.fit(X, Y)
+
+prediction = model.predict(X)
+
+Important methods:
+
+fit()
+Trains the model.
+
+predict()
+Makes predictions.
+
+Important attributes:
+
+coef_
+Stores the slope/coefficient.
+
+intercept_
+Stores the intercept.
+
+32. VISUALIZATION
+
+---
+
+Linear Regression can be visualized using a scatter plot and a regression line.
+
+Scatter plot:
+Shows the original data points.
+
+Regression line:
+Shows the model's predictions.
+
+The closer the points are to the regression line, the better the line generally represents the data.
+
+33. REAL-WORLD APPLICATIONS
+
+---
+
+Linear Regression can be used for:
+
+* House price prediction
+* Salary prediction
+* Sales forecasting
+* Demand estimation
+* Temperature prediction
+* Business forecasting
+* Risk analysis
+* Performance prediction
+* Relationship analysis
+
+34. IMPORTANT TERMS
+
+---
+
+Independent Variable:
+The input feature used to make predictions.
+
+Dependent Variable:
+The output/target we want to predict.
+
+Feature:
+An input variable.
+
+Target:
+The output variable.
+
+Coefficient:
+Shows how much the prediction changes for a one-unit change in a feature.
+
+Intercept:
+Predicted value when all input features are zero.
+
+Residual:
+Difference between actual and predicted value.
+
+Regression Line:
+Best-fitting line used for prediction.
+
+MSE:
+Mean Squared Error.
+
+MAE:
+Mean Absolute Error.
+
+R²:
+Coefficient of determination.
+
+35. SIMPLE WORKFLOW
+
+---
+
+Data
+|
+v
+Separate X and Y
+|
+v
+Split into Training and Testing Data
+|
+v
+Train Linear Regression Model
+|
+v
+Find Best-Fitting Line
+|
+v
+Make Predictions
+|
+v
+Evaluate Model
+|
+v
+Use Model for New Data
+
+36. KEY FORMULAS
+
+---
+
+Simple Linear Regression:
+
+y_hat = b0 + b1x
+
+Slope:
+
+m = (y2 - y1) / (x2 - x1)
+
+Residual:
+
+e = y - y_hat
+
+Mean Squared Error:
+
+MSE = (1/n) * SUM((y - y_hat)^2)
+
+Mean Absolute Error:
+
+MAE = (1/n) * SUM(|y - y_hat|)
+
+R²:
+
+R² = 1 - (SS_res / SS_tot)
+
+37. SUMMARY
+
+---
+
+Linear Regression is one of the simplest and most important machine learning algorithms.
+
+It learns the relationship between input variables and a continuous output.
+
+The basic equation is:
+
+y_hat = b0 + b1x
+
+The model tries to find the best values of the slope and intercept so that the predictions are as close as possible to the actual values.
+
+Important concepts to understand:
+
+* Independent and dependent variables
+* Slope
+* Intercept
+* Regression line
+* Residual
+* Cost function
+* Mean Squared Error
+* Mean Absolute Error
+* Least Squares
+* Gradient Descent
+* R² score
+* Training and testing
+* Overfitting and underfitting
+* Outliers
+* Simple Linear Regression
+* Multiple Linear Regression
+
+Linear Regression is a good starting point for understanding how machine learning models learn relationships from data and make predictions.
